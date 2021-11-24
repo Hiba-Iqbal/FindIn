@@ -1,0 +1,40 @@
+.modal-formContainer {
+  & .padding-x {
+    padding: 0 32px;
+  }
+
+  & .spacing {
+    justify-content: space-between;
+  }
+
+  & .left-align {
+    justify-content: flex-end;
+  }
+
+  width: 100%;
+
+  & .modal-type {
+    & h5 {
+      color: $text-color;
+      font-size: $font-size-lg;
+    }
+  }
+
+  & .m-form-row {
+    padding: 0 32px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    & textarea {
+      border: solid 1px $border-color;
+      outline: none;
+      height: 200px;
+      box-shadow: 0 0 16px $shadow-color;
+      border-radius: 25px;
+      padding: 20px 25px;
+      resize: none;
+    }
+  }
+}

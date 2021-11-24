@@ -1,0 +1,307 @@
+@import "../../assets/scss/variables";
+
+.container-fluid img {
+  cursor: default;
+}
+
+.home {
+  position: relative;
+  top: 0px;
+  background: rgb(235, 235, 235);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(235, 235, 235, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(235, 235, 235, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(235, 235, 235, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ebebeb",endColorstr="#ffffff",GradientType=1);
+  .mobile-textalign {
+    font-family: $font-medium;
+    margin-top: 4px;
+  }
+
+  .banner-spacing {
+    // padding-left: calc(114px);
+  }
+
+  .first-banner-heading-container {
+    display: flex;
+    flex-direction: column;
+    padding: 124px 0 0 0;
+    // justify-content: center;
+    // align-items: center;
+    // padding: 0px 50px 0px 100px;
+
+    .inner-container {
+      max-width: 620px;
+      .banner-content {
+        font-size: 14px;
+        line-height: 25px;
+        font-family: $font-light;
+        margin: 42px 0 68px 0;
+      }
+
+      .get-started-btn > span {
+        font-family: $font-medium !important;
+        font-size: 18px;
+      }
+    }
+  }
+  .main-heading {
+    font-size: 2.8vw;
+    line-height: 1.7;
+    font-family: $font-medium;
+    color: $secondary;
+    // padding-right: 5rem;
+
+    .banner-heading-highlight {
+      font-family: $font-bold;
+      font-size: 2.8vw;
+      color: $blue;
+    }
+  }
+
+  .sub-heading {
+    margin: 32px 0px;
+    font-size: 1.5vw;
+    font-family: $font-medium;
+    color: $secondary;
+  }
+
+  .container-benefit {
+    padding: 0 90px;
+    margin: 0 0 100px 0;
+
+    h4 {
+      font-size: $font-size-lg;
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+
+    &.primary {
+      h4 {
+        color: $primary;
+      }
+    }
+    .inner-container {
+      flex-direction: row;
+      justify-content: space-between;
+      display: flex;
+      // flex-wrap: wrap;
+      // justify-content: center;
+      margin: 20px 0px 0px 0px;
+      .box {
+        display: flex;
+        width: max-content;
+        // min-width: calc(281px + 87px);
+        max-width: 310px;
+        margin: 20px 0;
+        flex-direction: row;
+        // margin-left: 30px;
+        align-items: center;
+        &:first-of-type {
+          margin-left: 0px;
+        }
+        h3 {
+          text-decoration: none;
+        }
+        p {
+          font-family: $font-light !important;
+          font-size: 15px;
+          line-height: 1.2;
+
+          // max-width: 297px;
+          margin-bottom: 0;
+          margin-top: 0;
+        }
+        img {
+          width: 80px;
+        }
+        span {
+          padding: 0 0px 0px 15px;
+          flex: 1;
+        }
+        .b-text {
+          color: $primary;
+          font-size: 20px;
+          font-family: $font-bold;
+        }
+        .a-text {
+          color: #1a1d3d;
+          margin-bottom: 0.3rem;
+          font-size: 20px;
+          font-family: $font-bold;
+        }
+      }
+    }
+  }
+
+  .container-filters {
+    padding: 0 90px;
+    margin: 0 0 100px 0;
+
+    h4 {
+      font-size: $font-size-lg;
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+
+    &.primary {
+      h4 {
+        color: $primary;
+      }
+    }
+    .inner-container {
+      flex-direction: row;
+      justify-content: space-between;
+      display: flex;
+      // flex-wrap: wrap;
+      // justify-content: center;
+      margin: 20px 0px 0px 0px;
+      .box {
+        display: flex;
+        width: max-content;
+        max-width: 310px;
+        flex-direction: row;
+        // margin-left: 30px;
+        align-items: center;
+        &:first-of-type {
+          margin-left: 0px;
+        }
+        h3 {
+          font-size: $font-size-md;
+          text-decoration: none;
+        }
+        p {
+          font-family: $font-light !important;
+          font-size: 15px;
+          line-height: 1.2;
+          // max-width: 297px;
+          margin-bottom: 0;
+          margin-top: 0;
+        }
+        img {
+          width: 80px;
+        }
+        span {
+          padding: 20px 0px 0px 15px;
+          flex: 1;
+        }
+        .b-text {
+          color: $primary;
+          font-size: 20px;
+          font-family: $font-bold;
+        }
+        .a-text {
+          color: #1a1d3d;
+          font-size: 20px;
+          font-family: $font-bold;
+        }
+      }
+    }
+  }
+
+  .cv-container {
+    position: relative;
+    bottom: -50px;
+    .cv-sample {
+      max-width: 1000px;
+    }
+  }
+  .small-paragraph p {
+    font-size: 13px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    max-width: 570px;
+    padding: 0 20px 0 0;
+  }
+  .bottom-container {
+    .bottom-container-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: -10px 0 0 0;
+      padding-top: 70px;
+
+      .bottom-text-section {
+        flex-basis: 40%;
+        margin: 10px 0 0 0;
+        flex-grow: 1;
+      }
+
+      .btm-container-img {
+        flex-basis: 60%;
+        flex-grow: 1;
+        margin: 10px 0 0 0;
+        align-self: flex-end;
+
+        img {
+          width: 100%;
+          object-fit: cover;
+          cursor: default;
+        }
+      }
+    }
+    .text-column {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .demo-btn {
+      margin-top: 20px;
+    }
+    .book-a-demo-btn {
+      font-family: $font-medium;
+      text-decoration: none;
+    }
+  }
+  .bottom-text-section {
+    padding: 0px 0 45px 45px;
+  }
+  .bottom-logo {
+    max-width: 287px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+.small-txt {
+  margin-top: 0.6em;
+  font-size: $font-size-x-sm !important;
+}
+.safari-fix {
+  align-self: flex-start !important;
+  justify-self: flex-start !important;
+}
+
+.home-content-container {
+  text-align: center;
+  padding: 90px 0 60px 0;
+
+  .main-heading {
+    font-size: 2.8vw;
+  }
+
+  h5 {
+    font-size: 1.7vw;
+    text-transform: uppercase;
+  }
+}
+
+.mid-image {
+  img {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+  }
+}

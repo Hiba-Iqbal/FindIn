@@ -1,0 +1,450 @@
+@import "../../assets/scss/variables";
+.small-text-common {
+  color: $white;
+  font-size: $font-size-md-sm;
+  margin: 0;
+}
+.c-job-detail-card {
+  .header {
+    z-index: 1;
+    position: relative;
+    min-height: 270px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: flex-end;
+    .company-details-wrapper {
+      gap: 20px;
+      flex-direction: column-reverse;
+    }
+    .display-flex {
+      display: flex;
+      align-items: flex-end;
+    }
+    .company-details {
+      padding-left: 10px;
+      height: max-content;
+      p {
+        margin: 0;
+      }
+      &.center {
+        display: flex;
+        align-items: flex-start;
+      }
+      .company-name {
+        font-size: $font-size-lg;
+        color: $white;
+        font-family: $font-bold;
+      }
+      .company-type {
+        font-size: $font-size-x-sm;
+        color: $white;
+      }
+    }
+    .company-category {
+      color: $light-grey;
+      font-weight: lighter;
+      font-size: $font-size-sm;
+    }
+    .back-btn {
+      display: none;
+    }
+
+    .job-banner-img {
+      position: absolute;
+      top: 0;
+      left: 0%;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+
+    .banner-img-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: -1;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .job-info-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 550px;
+      flex-wrap: wrap;
+      .company-details {
+        padding-left: 10px;
+        height: max-content;
+        p {
+          margin: 0;
+        }
+        &.center {
+          display: flex;
+          align-items: flex-start;
+        }
+        .company-name {
+          font-size: $font-size-lg;
+          color: $white;
+          font-family: $font-bold;
+        }
+        .company-type {
+          font-size: $font-size-x-sm;
+          color: $white;
+        }
+      }
+
+      .job-img {
+        width: 110px;
+        height: 110px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 6px;
+      }
+
+      .job-info {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 0px 0px 0px 10px;
+
+        .job-title {
+          color: $white;
+          margin: 0px;
+          font-family: $font-medium;
+          font-size: $font-size-md;
+          // text-transform: uppercase;
+        }
+
+        .job-company {
+          color: $white;
+          margin: 5px 0px;
+          font-size: $font-size-lg;
+        }
+
+        .job-sector {
+          color: $white;
+          margin: 0px;
+          font-family: $font-light;
+          font-size: $font-size-sm;
+        }
+      }
+    }
+  }
+
+  .job-details-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    max-width: 100%;
+
+    .details-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+
+      .job-title {
+        margin: 0px;
+        font-size: $font-size-md;
+      }
+
+      .title {
+        font-family: $font-medium;
+      }
+
+      .actions-wrapper {
+        display: flex;
+        max-width: unset;
+        width: 60%;
+        justify-content: flex-end;
+        align-items: center;
+
+        button {
+          margin: 0px 0px;
+          width: 120px;
+          margin-right: 15px;
+          font-size: 12px;
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+      .icon {
+        height: 18px;
+        width: 18px;
+      }
+      .following-icon {
+        background-image: url("./../../assets/images/icons/following-blue-icon.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+      }
+      .c-button:hover > .following-icon {
+        background-image: url("./../../assets/images/icons/following-white-icon.svg") !important;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+      }
+      .c-button {
+        padding: 4px 25px;
+      }
+    }
+
+    .content-box {
+      display: flex;
+      justify-content: space-between;
+
+      &.first {
+        padding: 0px 0px 0px 0px;
+      }
+
+      .content-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .content-block {
+          display: flex;
+          flex-direction: column;
+          padding: 0px 20px 0px 0px;
+          margin: 0px 0px 10px 0px;
+          .c-job-card.box {
+            width: 100%;
+          }
+          .company-page-heading {
+            padding: 0 0 0 25px;
+            position: relative;
+            font-family: $font-subtitle;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            font-size: $font-size-md;
+
+            &::after {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: calc(50% - 2px);
+              height: 2px;
+              width: 15px;
+              background-color: $text-color;
+            }
+          }
+          .license-tags {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 5px 0;
+            margin: -10px 0 0 0;
+
+            .tags {
+              margin: 10px 10px 0 0;
+              background-color: $white;
+              color: $black;
+              padding: 5px 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 5px;
+              font-size: $font-size-sm;
+              border: 1px solid $black;
+            }
+          }
+
+          .block-title {
+            font-size: $font-size-md;
+            color: $secondary;
+            &.thick-title {
+              font-family: $font-subtitle;
+              font-size: 16px !important;
+            }
+          }
+
+          .block-text {
+            font-size: $font-size-sm;
+            padding: 0px 0px 0px 20px;
+            text-overflow: ellipsis;
+            word-break: break-word;
+            white-space: pre-wrap;
+          }
+
+          .block-video {
+            height: 350px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+          }
+
+          .block-more {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px 0px 0px 0px;
+            justify-content: space-between;
+          }
+
+          .block-map {
+            width: 100%;
+            height: 350px;
+            margin-bottom: 2em;
+          }
+
+          .c-list {
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            padding: 0px 0px 0px 35px;
+            height: 100%;
+            list-style-type: circle;
+
+            li {
+              padding: 5px 15px 5px 0px;
+              justify-content: space-between;
+              font-size: $font-size-sm;
+
+              &::marker {
+                color: $text-color;
+                font-size: $font-size-md;
+              }
+            }
+          }
+
+          &:last-of-type {
+            margin-bottom: 0px;
+          }
+        }
+      }
+
+      .benefits-list {
+        background: #fff;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 16px $shadow-color;
+        border-radius: 10px;
+        padding: 0px;
+        min-width: 250px;
+        height: 100%;
+
+        span {
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 0.5px solid $border-color;
+          padding: 10px 15px;
+          font-size: $font-size-x-sm;
+          &:first-of-type {
+            padding: 15px 15px;
+          }
+
+          .title {
+            margin: 0px;
+            font-size: $font-size-sm;
+          }
+        }
+      }
+    }
+  }
+  mark {
+    font-family: $font-subtitle !important;
+  }
+  .ant-btn > a {
+    color: $primary !important;
+
+    text-decoration: none !important;
+    &:hover {
+      background-color: unset !important;
+      color: $white !important;
+    }
+  }
+  .c-images-gallery > span > h6 {
+    font-family: $font-subtitle;
+    font-size: 16px !important;
+  }
+  .ant-select {
+    width: unset !important;
+    width: 200px !important;
+  }
+
+  .video-section {
+    display: flex;
+    justify-content: center;
+    .company-profile-video {
+      border-radius: 15px;
+      height: 350px;
+      width: 100%;
+      margin: auto;
+      overflow: hidden;
+    }
+  }
+}
+
+button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--right {
+  background: transparent;
+  height: 100%;
+  width: 60px;
+  right: 0;
+  border-radius: 0;
+  transition: 0.3s all;
+  background-size: 0px;
+  border-radius: 90% 0 0 90%;
+  &::before {
+    background-color: #fff;
+    color: #000;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    left: 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+  }
+}
+button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--left {
+  background: transparent;
+  height: 100%;
+  width: 60px;
+  left: 0;
+  border-radius: 0;
+  transition: 0.3s all;
+  background-size: 0px;
+  border-radius: 0 90% 90% 0;
+  &::before {
+    background-color: #fff;
+    color: #000;
+    height: 30px;
+    width: 30px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+  }
+}
+button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--right:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 3px 5px 10px 14px rgba(255, 255, 255, 0.3);
+}
+button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--left:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 3px 5px 10px 14px rgba(255, 255, 255, 0.3);
+}
+.company-photos-carousel {
+  ul {
+    li {
+      padding: 0 10px;
+    }
+  }
+}
+.share-only-mobile {
+  padding-right: 20px;
+}
+.share-only-mobiles {
+  position: absolute;
+  right: 140px;
+  top: -5px;
+}

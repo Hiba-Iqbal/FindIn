@@ -1,0 +1,161 @@
+@import "../../assets/scss/variables";
+
+.country-city-modal-parent .modal-dialog {
+  padding: 0 !important;
+}
+
+.country-city-modal-parent .modal-dialog .modal-content {
+  : 0 0 0 1px #d4d4d4;
+  border-radius: 16px;
+  max-width: 660px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.country-city-modal-parent .modal-dialog .modal-content .close {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  outline: none;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  font-size: 1rem;
+}
+
+.country-city-modal-parent .countries-cities-selector .country-city-wrapper {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: gray;
+}
+
+.country-city-modal-parent .countries-cities-selector .title {
+  height: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  padding: 1em 2em;
+  font-size: 18px;
+  border-bottom: solid 1px rgba(42, 143, 255, 0.4);
+}
+
+.country-city-modal-parent .countries-cities-selector .header {
+  height: 60px;
+  -webkit-box-shadow: 0 8px 8px -8px gray;
+  box-shadow: 0 8px 8px -8px gray;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.country-city-modal-parent .countries-cities-selector .country-list {
+  height: calc(100vh - 220px);
+  overflow-y: auto;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+}
+
+.country-city-modal-parent .countries-cities-selector .country-list .country-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1em 2em;
+  border-bottom: solid 1px rgba(42, 143, 255, 0.4);
+  cursor: pointer;
+}
+
+.country-city-modal-parent .countries-cities-selector .country-list .country-list-item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.country-city-modal-parent .countries-cities-selector .country-list .country-list-item .country-name {
+  margin-left: 5px;
+}
+
+.country-city-modal-parent .countries-cities-selector .country-list .country-list-item.active {
+  background-color: whitesmoke;
+}
+
+.country-city-modal-parent .countries-cities-selector .city-list {
+  height: calc(100vh - 220px);
+  overflow-y: auto;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+}
+
+.country-city-modal-parent .countries-cities-selector .city-list .title {
+  height: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  padding: 1em 2em;
+  font-size: 18px;
+  border-bottom: solid 1px rgba(42, 143, 255, 0.4);
+}
+
+.country-city-modal-parent .countries-cities-selector .city-list .Select-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em 2em;
+}
+
+.country-city-modal-parent .countries-cities-selector .city-list .Select-all .title {
+  margin-left: 15px;
+  font-family: "Gordita-Medium";
+  color: #171c3c;
+}
+
+.country-city-modal-parent .countries-cities-selector .city-list .city-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  padding: 1em 2em;
+}
+
+.country-city-modal-parent .countries-cities-selector .city-list .city-list-item .city-name {
+  margin-left: 15px;
+}
+
+.country-city-modal-parent .countries-cities-selector .footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  box-shadow: 0 -8px 8px -8px rgba(128, 128, 128, 0.4);
+}
+
+.country-city-modal-parent .country-city-modal {
+  z-index: 1050 !important;
+}
+/*# sourceMappingURL=CountryCityModal.css.map */

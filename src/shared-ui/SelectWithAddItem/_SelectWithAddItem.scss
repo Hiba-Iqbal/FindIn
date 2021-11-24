@@ -1,0 +1,15 @@
+.c-select-with-add-item {
+  .ant-select-selector {
+    font-size: $font-size-md;
+    box-shadow: 1px 1px 10px $shadow-color !important;
+    border: none !important;
+    border-radius: 100px !important;
+    height: 35px !important;
+    padding: 3px 18px !important;
+    box-shadow: 0 0 16px $shadow-color;
+    background: #ffffff !important;
+  }
+  .ant-select-arrow {
+    right: 15px;
+  }
+}

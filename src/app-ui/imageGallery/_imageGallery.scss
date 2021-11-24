@@ -1,0 +1,24 @@
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+// .image-gallery-thumbnail,
+// .image-gallery-thumbnail {
+//   height: 100px;
+//   width: 180px;
+// }
+
+.react-image-wrapper {
+  .image-gallery-left-nav,
+  .image-gallery-right-nav {
+    display: none;
+  }
+
+  .image-gallery-content .image-gallery-slide {
+    border-radius: 10px;
+    overflow: hidden;
+    .image-gallery-image {
+      border-radius: 10px;
+
+      max-height: calc(100vh - 20px);
+    }
+  }
+}

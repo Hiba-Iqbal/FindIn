@@ -1,0 +1,124 @@
+@media screen and (max-width: 1024px) {
+  .jobs-page {
+    .jobs-wrapper {
+      .find-jobs-section {
+        flex-basis: 50%;
+      }
+      .job-details {
+        flex-basis: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .jobs-page {
+    .jobs-wrapper {
+      .find-jobs-section {
+        flex-basis: 50%;
+
+        // .jobs-filter-header-secrion {
+        //   flex-grow: 1;
+        //   padding: 0 20px 0 0;
+        //   height: auto;
+        //   flex-direction: column;
+
+        //   .c-input {
+        //     width: 100%;
+        //     margin: 0 0 10px 0;
+        //   }
+        // }
+
+        // .jobs-button-section {
+        //   display: flex;
+        //   flex-direction: column-reverse;
+        //   justify-content: center;
+        //   position: relative;
+        //   top: -4px;
+
+        //   .filter-btns {
+        //     margin: 6px 0;
+        //   }
+        // }
+      }
+      .job-details {
+        flex-basis: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .jobs-page {
+    .jobs-wrapper {
+      .job-filter-section {
+        padding-inline: 11px;
+      }
+      .jobs-list {
+        padding: 15px 11px;
+      }
+      .find-jobs-section {
+        min-height: unset;
+        .jobs-filter-header-secrion {
+          flex-grow: 1;
+          padding: 0 20px 0 0;
+          height: auto;
+          flex-direction: column;
+
+          .c-input {
+            width: 100%;
+            margin: 0 0 10px 0;
+          }
+        }
+
+        .jobs-button-section {
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: center;
+          position: relative;
+          top: -4px;
+
+          .filter-btns {
+            margin: 6px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .jobs-page {
+    .jobs-wrapper {
+      width: 100%;
+
+      .find-jobs-section {
+        flex-grow: 1;
+        min-width: unset;
+      }
+      .job-details {
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        transform: translateX(0);
+        display: none;
+        transition: all ease 0.3s;
+        z-index: 100;
+        // .navigation-header {
+        //   height: 60px;
+        //   background-color: whitesmoke;
+        // }
+      }
+      .job-details-show {
+        transform: translateX(0);
+        transition: all ease 0.3s;
+        height: 100%;
+        display: block;
+      }
+      .jobs-list {
+        padding: 10px 10px 10px 10px;
+        overflow-y: auto;
+      }
+    }
+  }
+}

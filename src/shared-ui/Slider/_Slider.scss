@@ -1,0 +1,44 @@
+.c-slider {
+  max-width: 850px;
+  min-width: 700px;
+  height: 43px;
+  padding: 0px 40px;
+  .ant-carousel {
+    .slick-dots {
+      li {
+        margin-left: 10px !important;
+        &:nth-child(1) {
+          button {
+            background: $green;
+          }
+        }
+        &:nth-child(2) {
+          button {
+            background: $secondary;
+          }
+        }
+        &:nth-child(3) {
+          button {
+            background: $blue;
+          }
+        }
+        button {
+          width: 15px;
+          height: 15px;
+          border-radius: 6px;
+          opacity: 1;
+        }
+        &.slick-active {
+          width: 16px;
+          button {
+            opacity: 1;
+            background: $primary;
+          }
+        }
+      }
+    }
+    .slick-dots-bottom {
+      bottom: -50px;
+    }
+  }
+}

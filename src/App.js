@@ -1,13 +1,17 @@
-import './App.css';
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+
+import Routing from "./routing";
+import ScrollToTop from "./app-ui/ScrollToTop/ScrollToTop";
 
 function App() {
   return (
-    <div className="App">
-      <h1>SSSSSSS</h1>
-      <h1>SSSSSSS</h1>
-      <h1>SSSSSSS</h1>
-      <h1>SSSSSSS</h1>
-      <h1>SSSSSSS</h1>
+    <div>
+      <BrowserRouter>
+        <ScrollToTop>
+          <Routing />
+        </ScrollToTop>
+      </BrowserRouter>
     </div>
   );
 }

@@ -1,0 +1,49 @@
+@media screen and (max-width: 991px) {
+  // c-modal styling
+  .c-modal {
+    &.right-side {
+      &.lg {
+        .modal-dialog {
+          min-width: 80%;
+        }
+      }
+      .modal-dialog {
+        min-width: 80%;
+        .modal-content {
+        }
+      }
+    }
+
+    &.center {
+      &.medium {
+        .modal-dialog {
+          .modal-content {
+            width: 80%;
+          }
+        }
+      }
+
+      &.small {
+        .modal-dialog {
+          .modal-content {
+            width: 80%;
+          }
+        }
+      }
+      &.lg {
+        .modal-dialog {
+          .modal-content {
+            width: 80%;
+          }
+        }
+      }
+
+      .modal-dialog {
+        padding: 15px 0;
+        .modal-content {
+          padding: 15px;
+        }
+      }
+    }
+  }
+}

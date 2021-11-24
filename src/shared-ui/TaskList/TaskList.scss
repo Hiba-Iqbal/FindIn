@@ -1,0 +1,91 @@
+.task-list {
+  .task-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1em;
+    cursor: pointer;
+  }
+  .task-description {
+    font-size: $font-size-sm;
+    padding: 0;
+    margin: 2px 0 0 7px;
+    width: 260px;
+    height: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    &.expanded{
+      white-space: normal;
+      height: auto;
+    }
+  }
+  .expand {
+    margin-top: 1px;
+    cursor: pointer;
+    transition: transform ease 450ms;
+
+    &:hover{
+      transform: translateY(-1px);
+      
+    }
+    
+  }
+  .collapse{
+    margin-top: 1px;
+    cursor: pointer;
+    transform: rotate(9);
+    
+  }
+  // Custom Task Edit Section
+  .date-save-div {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+  }
+  .ant-form-item {
+    margin-bottom: 0;
+  }
+}
+
+// Custom Tag Style
+
+.custom-tag {
+  border-radius: 100px !important;
+  min-width: fit-content;
+  color: white !important;
+  background: $brown;
+  cursor: pointer !important;
+  text-align: center;
+  width: 70px;
+  font-size: $font-size-x-sm;
+  margin: 0;
+
+  //  Types of tags
+  &.complete {
+    background-color: $green;
+  }
+  &.due {
+    background-color: $text-color;
+  }
+  &.due-today {
+    background-color: $primary;
+  }
+  &.save {
+    background: $blue;
+  }
+}
+
+// Custom Task Edit
+.c-task-edit {
+  padding: 1em;
+
+  .date-save-div {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+  }
+  .ant-form-item {
+    margin-bottom: 0;
+  }
+}
