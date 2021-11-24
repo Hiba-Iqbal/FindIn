@@ -1,0 +1,55 @@
+$primary: #5271ff;
+$secondary: #171c3c;
+$white: #ffffff;
+$black: #000000;
+$text-color: #2d2f44;
+$blue: #5271ff;
+$light-grey: #d6d6d6;
+$green: #7ed957;
+$purple: #6c5984;
+$light-purple: #cb6ce6;
+$brown: #f8b041;
+$border-color: rgba(0, 0, 0, 0.05);
+
+$green: #59d424;
+
+$brown: #f8b041;
+$grey: #808080;
+$border-gray: #f4f4f4;
+
+$border-color: #d5d5d5;
+$card-radius: 15px;
+
+$darkPink: #e53262;
+
+//font families
+$font-bold: "Gordita-Bold";
+$font-light: "Gordita-Light";
+$font-medium: "Gordita-Regular";
+$font-subtitle: "Gordita-Medium";
+$shadow-color: #d4d4d4;
+$theme-border: solid 1px
+  rgba(
+    $color: $primary,
+    $alpha: 0.2,
+  );
+$theme-shadow: 0 0 0 1px
+  rgba(
+    $color: $primary,
+    $alpha: 1,
+  );
+$border-light: solid 1px
+  rgba(
+    $color: $text-color,
+    $alpha: 0.3,
+  );
+
+//font-sizes
+$font-size-x-sm: 10px;
+$font-size-md-sm: 11px;
+$font-size-sm: 12px;
+$font-size-md: 14px;
+$font-size-16: 16px;
+$font-size-lg: 20px;
+$font-size-30: 30px;
+$font-size-x-lg: 40px;

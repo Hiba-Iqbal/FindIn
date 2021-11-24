@@ -1,0 +1,14 @@
+.c-card-with-lines {
+  display: flex;
+  position: relative;
+  min-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 0 16px $shadow-color;
+  padding: 15px;
+  .lines-icon {
+    position: absolute;
+    width: 150px;
+    top: 0px;
+    right: 15px;
+  }
+}

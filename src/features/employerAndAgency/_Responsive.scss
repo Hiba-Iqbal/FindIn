@@ -1,0 +1,144 @@
+@import "../../assets/scss/variables";
+
+@media screen and (max-width: 767px) {
+  .emp-agncy-main {
+    padding: 0 10px;
+    .c-containers {
+      padding: 0;
+      .c-row {
+        .image-section {
+          width: 100%;
+          min-width: unset;
+          padding: 0;
+        }
+        .text-section {
+          width: 100%;
+          max-width: unset;
+          flex: unset;
+          padding: 0;
+          min-width: unset;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          h1 {
+            font-size: $font-size-lg;
+          }
+          p {
+            font-size: $font-size-md;
+          }
+        }
+        .interview-section {
+          padding-left: 0 !important;
+        }
+        .w-45 {
+          width: 100%;
+          margin: 20px 0;
+        }
+
+        .w-40 {
+          width: 100%;
+        }
+      }
+      .column-rev {
+        flex-direction: column-reverse !important;
+      }
+    }
+    .interview-type {
+      margin-bottom: 20px;
+    }
+    .sections {
+      padding-top: 40px;
+    }
+    .c-row {
+      flex-direction: column;
+    }
+    .emp-heading {
+      font-size: $font-size-lg;
+      line-height: unset;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .emp-agncy-main {
+    .c-row {
+      .job-n-demo {
+        width: 100% !important;
+        .c-button {
+          padding: 8px 20px;
+          width: unset !important;
+          width: 140px !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .emp-agncy-main {
+    padding: 10px 30px;
+
+    h1 {
+      font-family: $font-medium;
+      font-size: 20px;
+      margin: 0 0 20px 0;
+      line-height: 1;
+    }
+    p {
+      font-size: 18px;
+      max-width: 350px;
+      font-family: $font-light;
+    }
+    .c-containers {
+      padding: 0;
+
+      .c-row {
+        .text-section {
+          width: 100%;
+          max-width: 400px;
+          flex: unset;
+          padding: 0;
+          min-width: unset;
+          display: flex;
+          // justify-content: unset;
+          align-items: center;
+        }
+      }
+    }
+    .sections {
+      padding-top: 60px;
+      h1 {
+        font-size: $font-size-lg;
+      }
+      p {
+        font-size: $font-size-md;
+      }
+    }
+    .emp-heading {
+      font-size: $font-size-lg;
+      line-height: unset;
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .emp-agncy-main {
+    padding: 70px 0;
+    .emp-heading {
+      // font-size: 50px;
+      line-height: 1.4;
+    }
+    h1 {
+      // font-size: 50px;
+      margin: 0 0 20px 0;
+      line-height: 1.4;
+    }
+    p {
+      // font-size: 22px;
+      max-width: 650px;
+    }
+  }
+}

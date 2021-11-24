@@ -1,0 +1,90 @@
+@media screen and (min-width: 541px) and (max-width: 1024px) {
+  .filter-main {
+    .filter-section {
+      .filters-row {
+        flex-wrap: unset;
+      }
+      .filter-cell {
+        .switches {
+          font-size: 12px;
+        }
+      }
+      .ant-slider {
+        margin: 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .filter-main {
+    .filter-section {
+      .filter-cell {
+        .switches {
+          font-size: 12px;
+        }
+      }
+      .column {
+        align-items: unset;
+      }
+      .ant-slider {
+        margin: 0 0 30px;
+        width: 100%;
+      }
+    }
+    .mr-sm-0 {
+      margin: 0 !important;
+    }
+    .silder-equivalent {
+      color: #7ed957;
+      position: absolute;
+      bottom: -4px !important;
+    }
+  }
+  .override-width {
+    .modal-dialog {
+      .modal-content {
+        width: unset !important;
+      }
+    }
+  }
+  .country-city-modal-parent {
+    .modal-dialog {
+      padding-top: 36px !important;
+    }
+  }
+  .ant-row {
+    &.ant-form-item {
+      &.c-input {
+        &.c-form {
+          &.p-0 {
+            flex-direction: row;
+          }
+        }
+      }
+    }
+  }
+  .super-select {
+    &.small {
+      width: 100% !important;
+    }
+  }
+  .filter-main .filter-section .jobs-grid {
+    padding: 0;
+    min-height: 80px;
+    .ant-form-item {
+      margin-bottom: 10px;
+    }
+  }
+}
+@media only screen and (max-width: 410px) {
+  .filter-main {
+    divide {
+      padding: 0 !important;
+      padding-bottom: 20px !important;
+      display: flex !important;
+      justify-content: space-between !important;
+    }
+  }
+}

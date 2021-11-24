@@ -1,0 +1,51 @@
+@import "../../assets/scss/variables";
+
+.blog-post {
+  padding: 0 30px 30px 30px;
+  cursor: pointer;
+  margin: 10px 0;
+
+  hr {
+    margin: 0 0 20px 0;
+  }
+
+  div {
+    position: relative;
+
+    .user-title {
+      margin: 0 0 2px 55px;
+      font-family: $font-subtitle;
+    }
+
+    .user-photo {
+      position: absolute;
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      top: -8px;
+      left: -12px;
+      border: solid 2px $white;
+    }
+    .blog-thumb {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+    .title {
+      font-family: $font-medium;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      font-family: $font-subtitle;
+    }
+    .desc {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      font-family: $font-subtitle;
+    }
+  }
+}

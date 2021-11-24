@@ -1,0 +1,35 @@
+.certificate-form-container {
+  width: 100%;
+  height: auto;
+
+  & .cer-x-spacing {
+    padding: 0 34px;
+  }
+
+  & .cer-headings {
+    font-size: $font-size-lg;
+    color: $text-color;
+  }
+
+  & .spacing-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  & .cer-form-rows {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    & textarea {
+      border: solid 1px $border-color;
+      outline: none;
+      height: 200px;
+      box-shadow: 0 0 16px $shadow-color;
+      border-radius: 25px;
+      padding: 20px 25px;
+      resize: none;
+    }
+  }
+}

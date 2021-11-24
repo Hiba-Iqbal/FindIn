@@ -1,0 +1,22 @@
+.avatar-uploader{
+    width: auto;
+    .ant-upload{
+        &.ant-upload-select-picture-card {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        background: $blue;
+        margin: 0px 0px 0px 5px;
+        color: $white;
+        .anticon {
+            color: white;
+        }
+        .upload-text{
+            margin-top: 1px  ;
+            font-size:9px  ;
+            color: $white;
+        }
+    }
+   
+}
+}

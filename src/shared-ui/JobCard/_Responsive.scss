@@ -1,0 +1,122 @@
+// @media screen and (max-width: 768px) {
+//   .c-job-card .tag-container .job-tag .tag-text {
+//     display: none;
+//   }
+//   .c-job-card .tag-container .jobcard-checkbox-mobile {
+//     display: unset !important;
+//     justify-self: flex-start;
+//     margin-right: auto;
+//   }
+//   .c-job-card .tag-container {
+//     width: 100%;
+//     justify-content: flex-end;
+//   }
+//   .c-job-detail-card {
+//     .header {
+//       top: 0;
+//     }
+//   }
+// }
+// @media screen and (max-width: 539px) {
+//   .c-job-card .job-card-first-container {
+//     flex-direction: column;
+//     align-items: flex-start;
+//   }
+// }
+
+// @media screen and (min-width: 991px) and (max-width: 1024px) {
+//   .c-job-card {
+//     .job-card-first-container {
+//       flex-direction: column;
+//       align-items: flex-start;
+//     }
+//   }
+//   .task-div {
+//     padding: 14px 1.5px;
+//   }
+// }
+
+// @media screen and (max-width: 768px) {
+//   .job-card-first-container {
+//     display: flex;
+//     width: 100%;
+//     align-items: flex-end;
+//   .c-job-card .tag-container .job-tag .tag-text {
+//     display: none;
+//   }
+//   .c-job-card .tag-container .jobcard-checkbox-mobile {
+//     display: unset !important;
+//     justify-self: flex-start;
+//     margin-right: auto;
+//   }
+//   .c-job-card .tag-container {
+//     width: 100%;
+//     justify-content: flex-end;
+//   }
+//   .c-job-detail-card {
+//     .header {
+//       top: 0;
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 539px) {
+//   .c-job-card .job-card-first-container {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//   }
+// }
+
+// @media screen and (min-width: 991px) and (max-width: 1024px) {
+//   .c-job-card {
+//     .job-card-first-container {
+//       flex-direction: column;
+//       align-items: flex-start;
+//     }
+//   }
+//   .task-div {
+//     padding: 14px 1.5px;
+//   }
+// }
+
+// }
+
+@media screen and (max-width: 768px) {
+  .c-job-card .tag-container .job-tag .tag-text {
+    display: none;
+  }
+  .c-job-card .tag-container .jobcard-checkbox-mobile {
+    display: unset !important;
+    justify-self: flex-start;
+    margin-right: auto;
+  }
+  .c-job-card .tag-container {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .c-job-detail-card {
+    .header {
+      top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 539px) {
+  .c-job-card .job-card-first-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1024px) {
+  .c-job-card {
+    .job-card-first-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  .task-div {
+    padding: 14px 1.5px;
+  }
+}

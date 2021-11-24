@@ -1,0 +1,110 @@
+@import "../../assets/scss/variables";
+.services-main {
+  display: flex;
+
+  h1 {
+    font-family: $font-medium;
+    font-size: 24px;
+    margin: 0 0 30px 0;
+  }
+  p {
+    font-size: 24px;
+    font-family: $font-light;
+  }
+  .cust-reward-section {
+    width: 60%;
+    height: 100%;
+    min-height: fit-content;
+    padding: 120px 62px 120px 80px;
+
+    .coming-soon {
+      color: $blue;
+      font-size: 2.8vw;
+      text-transform: uppercase;
+      padding: 0 0 20px 0;
+    }
+    .services-desc {
+      font-size: $font-size-30;
+      margin: 20px 0;
+    }
+    .full-desc {
+      font-size: 16px;
+      padding: 0 50px 0 0;
+      font-family: $font-medium;
+      line-height: 1.8;
+    }
+    .icons {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -10px 0 0 0;
+
+      img {
+        margin: 40px 50px 0 0;
+        max-width: 70px;
+      }
+    }
+  }
+  .user-services {
+    width: 40%;
+    background-image: url("../../assets/images/Services/form-bg.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+
+    .services-form {
+      background-color: rgba(255, 255, 255, 0.805);
+      border-radius: 10px;
+      padding: 30px;
+
+      .services-desc {
+        font-size: 15px;
+        margin-bottom: 30px;
+        line-height: 1.8;
+        font-family: $font-medium;
+      }
+
+      // p {
+      //   font-size: $font-size-lg;
+      // }
+      .services-form-wrapper {
+        width: unset;
+        display: unset;
+        flex-direction: unset;
+
+        .text-area {
+          .ant-input {
+            border: none !important;
+            transition: all 0.3s;
+            border-radius: 20px;
+            resize: none;
+          }
+          .ant-input:focus,
+          .ant-input-focused {
+            border-right-width: unset !important;
+            box-shadow: unset;
+          }
+          .ant-form-item-control-input-content {
+            display: flex;
+            flex-direction: column;
+          }
+          .ant-form-item-control-input {
+            border-radius: 16px;
+            padding: 10px 0;
+            box-shadow: 0 0 10px $shadow-color !important;
+          }
+        }
+        .submit-btn {
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+
+          .c-button {
+            padding: 6px 40px;
+          }
+        }
+      }
+    }
+  }
+}

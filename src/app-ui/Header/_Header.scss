@@ -1,0 +1,62 @@
+.c-header {
+  position: sticky;
+  top: 0px;
+  height: 65px;
+  z-index: 540;
+  .inner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 24px;
+    height: 65px;
+    background-color: $white;
+  }
+
+  nav {
+    display: flex;
+    margin: 0px;
+    &.menu {
+      li {
+        color: $text-color;
+      }
+    }
+    .c-button {
+      padding: 6px 32px;
+    }
+    a {
+      list-style: none;
+      padding: 0px 16px;
+      font-size: 14px;
+      color: $secondary;
+      &.active {
+        color: $primary;
+      }
+      &.sign-up {
+        color: $primary;
+        // font-weight: bold;
+      }
+      &.login {
+        color: $secondary;
+        // font-weight: bold;
+      }
+    }
+  }
+  .logo {
+    width: 100%;
+    max-width: 210px;
+    min-width: 140px;
+  }
+  .shadow-box {
+    background: transparent
+      radial-gradient(closest-side at 50% 75%, #9b9b8f -81%, #ffffff00 100%) 0%
+      0% no-repeat padding-box;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+  }
+  .sign-up-btn {
+    font-family: $font-bold;
+  }
+}

@@ -1,0 +1,257 @@
+@media screen and (max-width: 991px) {
+  .pricing-section-main {
+    .pricing-container {
+      padding: 0 10px;
+      .heading-section {
+        padding: 20px 0;
+        p {
+          font-size: 20px;
+        }
+      }
+      .pricing-main {
+        display: block;
+
+        .color-blue {
+          font-size: 10px;
+        }
+
+        .pricing-section {
+          width: 100%;
+          .pricing-row {
+            .pricing-card {
+              font-size: 10px;
+              padding: 0 2px;
+              min-height: 500px;
+
+              .pricing-header a {
+                font-size: 10px;
+                position: relative;
+              }
+              .pricing-items .pricing-typs {
+                display: flex;
+                align-items: center;
+              }
+              .pricings {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+            }
+          }
+        }
+        .pricing-image {
+          padding: 20px 0;
+          width: 100%;
+        }
+      }
+      .c-button {
+        padding: 4px 10px;
+        position: relative;
+        top: -4px;
+
+        a {
+          font-size: 10px;
+        }
+      }
+    }
+    .pricing-details {
+      padding: 0 10px;
+      display: flex;
+      flex-direction: column-reverse;
+      .video-section {
+        width: 100%;
+        min-height: 350px;
+      }
+      .buy-premuim {
+        padding: 0;
+        .desc {
+          font-size: 18px;
+          max-width: 100%;
+          margin: 0 0 20px 0;
+
+          span {
+            font-size: 18px;
+          }
+        }
+        .premium-heading {
+          font-size: 18px;
+        }
+      }
+    }
+    .interview {
+      padding: 0px 10px;
+      padding-top: 20px;
+      display: block;
+
+      .coming-soon {
+        font-size: 25px;
+      }
+
+      .interview-details {
+        width: 100%;
+      }
+      .interview-image {
+        width: 100%;
+      }
+      .points {
+        display: flex;
+        align-items: flex-start;
+        margin: 20px 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .pricing-section-main {
+    .pricing-container {
+      .heading-section {
+        padding: 30px 0;
+      }
+      .pricing-main {
+        .color-blue {
+          font-size: 14px;
+        }
+        .pricing-section {
+          .pricing-row {
+            .pricing-card {
+              font-size: 14px;
+              min-height: max-content;
+
+              .pricing-header a {
+                font-size: 14px;
+                position: relative;
+                top: -2px;
+              }
+            }
+          }
+        }
+        .pricing-image {
+          padding: 30px 0;
+        }
+      }
+    }
+    .pricing-details {
+      .buy-premuim {
+        // width: 100%;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // text-align: center;
+        width: max-content;
+        // margin: auto;
+      }
+      .video-section {
+        width: 100%;
+        padding-bottom: 100%;
+        min-height: 800px;
+        max-width: unset;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .pricing-section-main {
+    .pricing-container {
+      padding: 15px;
+
+      .bg {
+        height: 100%;
+      }
+      .pricing-main {
+        .pricing-section {
+          .pricing-row {
+            .pricing-card {
+              min-height: 500px;
+
+              .pricing-items {
+                .pricings {
+                  min-height: 50px;
+                  display: flex;
+                  justify-content: center;
+                }
+                .pricing-typs {
+                  text-align: inherit;
+                  min-height: 50px;
+                  vertical-align: middle;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .pricing-details {
+      padding-top: 100px;
+    }
+    .interview {
+      padding-top: 100px;
+
+      .interview-details {
+        .coming-soon {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .pricing-section-main {
+    .pricing-container {
+      .heading-section {
+        p {
+          font-size: 2.5vw;
+        }
+      }
+      .pricing-main {
+        .pricing-section {
+          .pricing-row {
+            .pricing-card {
+              .pricing-items {
+                .pricings {
+                  min-height: 50px;
+                  font-size: 14px;
+                  .check-icon {
+                    font-size: 22px;
+                  }
+                }
+                .pricing-typs {
+                  min-height: 50px;
+                  font-size: 14px;
+                  vertical-align: middle;
+                }
+              }
+              .pricing-header {
+                .top-items-head {
+                  height: 60px;
+                  font-size: 16px;
+                }
+                .color-blue {
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .pricing-details {
+      padding: 0 108px;
+      padding-top: 200px;
+    }
+    .interview {
+      p {
+        max-width: 560px;
+        line-height: 1.6;
+        font-size: 15px;
+      }
+      .interview-details {
+        .make-interview {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

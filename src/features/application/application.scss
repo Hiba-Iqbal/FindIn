@@ -1,0 +1,101 @@
+@import "../../assets/scss/variables";
+
+.application-wrapper {
+  padding: 100px 0;
+  display: grid;
+  place-items: center;
+
+  .app-items {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 0 10px #d4d4d4;
+    border-radius: 4px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    min-height: 340px;
+    .loader {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #ffffff;
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo {
+      width: 100%;
+      display: flex;
+      margin: 0 0 20px 0;
+      justify-content: center;
+      img {
+        max-width: 200px;
+      }
+    }
+
+    .user-info {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+
+      & > p {
+        margin: 0;
+        font-size: 12px;
+
+        &:nth-child(2) {
+          font-family: $font-subtitle;
+        }
+      }
+      & > img {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .desc {
+        margin: 10px 0 0 0;
+      }
+    }
+
+    .fields {
+      margin: 20px 0 0 0;
+      padding: 10px 0 0 0;
+      border-top: solid 1px #eee;
+
+      .fields-items {
+        margin-bottom: 20px;
+        & > p {
+          margin: 4px 0;
+          color: #888888;
+        }
+
+        .fields-items-row {
+          display: flex;
+          background-color: #f8f8f8;
+          border-radius: 4px;
+
+          p {
+            margin: 5px 0;
+            padding: 0 10px;
+            border-right: solid 1px #e6e6e6;
+            &:last-child {
+              border-right: none;
+            }
+          }
+        }
+      }
+    }
+    & > button {
+      margin: 40px auto 0 auto;
+    }
+  }
+}

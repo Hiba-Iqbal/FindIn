@@ -1,0 +1,271 @@
+.c-button {
+  padding: 5px 25px;
+  color: #ffffff;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // padding: 8px 25px;
+  font-size: 14px;
+  border-radius: 6px;
+  width: max-content;
+  border: none;
+  transition: 0.2s all linear;
+  background: $primary;
+
+  span {
+    color: $white;
+    transition: 0.2s all linear;
+    // font-family: $font-bold !important;
+  }
+
+  .animated-icon {
+    transition: 0.2s linear all;
+    padding: 0px 0px 0px 5px;
+  }
+
+  &:hover {
+    background: $primary;
+    filter: brightness(90%);
+
+    .animated-icon {
+      padding: 0px 0px 0px 12px;
+    }
+  }
+
+  &:focus {
+    background: $primary;
+  }
+
+  // themes
+  &.transparent {
+    background: transparent;
+    border: 1px solid $white;
+    &:hover {
+      background: transparent;
+    }
+    &:focus {
+      background: transparent;
+    }
+    color: $white;
+  }
+  &.outlined {
+    background: $white;
+    border: 1px solid $primary;
+
+    span {
+      color: $primary;
+    }
+
+    &:hover {
+      background: $primary;
+
+      span {
+        color: $white;
+      }
+    }
+
+    &:focus {
+      background: $primary;
+      span {
+        color: $white;
+      }
+    }
+  }
+
+  &.light {
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(106, 210, 89, 1) 0%,
+      rgba(0, 176, 250, 1) 100%
+    );
+    &:hover {
+      background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(106, 210, 89, 1) 0%,
+        rgba(0, 176, 250, 1) 100%
+      );
+    }
+    &:focus {
+      background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(106, 210, 89, 1) 0%,
+        rgba(0, 176, 250, 1) 100%
+      );
+    }
+    color: $white;
+  }
+
+  &.primary {
+    background: $primary;
+    &:hover {
+      background: $primary;
+    }
+    &:focus {
+      background: $primary;
+    }
+    color: $white;
+  }
+
+  &.green {
+    background: $green;
+    &:hover {
+      background: $green;
+    }
+    &:focus {
+      background: $green;
+    }
+    color: $white;
+  }
+
+  &.purple {
+    background: $light-purple;
+    &:hover {
+      background: $light-purple;
+    }
+    &:focus {
+      background: $light-purple;
+    }
+    color: $white;
+  }
+
+  &.shadowed {
+    background: $white;
+    box-shadow: 0 0 16px $shadow-color;
+    span {
+      color: $text-color;
+    }
+
+    &:hover,
+    &:focus {
+      background: $primary;
+      span {
+        color: $white;
+      }
+    }
+  }
+
+  &.blue {
+    background: $blue;
+    &:hover {
+      background: $blue;
+    }
+    &:focus {
+      background: $blue;
+    }
+  }
+
+  //sizes
+  &.large {
+    width: 200px;
+  }
+
+  &.shadowed {
+    background: $white;
+    box-shadow: 0 0 16px $shadow-color;
+    span {
+      color: $text-color;
+    }
+
+    &:hover,
+    &:focus {
+      background: $primary;
+      span {
+        color: $white;
+      }
+    }
+  }
+
+  &.blue {
+    background: $blue;
+    &:hover {
+      background: $blue;
+    }
+    &:focus {
+      background: $blue;
+    }
+  }
+  &.outlined-red {
+    background: $white;
+    border: 1px solid $red;
+
+    span {
+      color: $red;
+    }
+
+    &:hover {
+      background: $red;
+
+      span {
+        color: $white;
+      }
+    }
+
+    &:focus {
+      background: $red;
+      span {
+        color: $white;
+      }
+    }
+  }
+
+  //sizes
+  &.large {
+    width: 200px;
+  }
+
+  &.medium {
+    width: 130px;
+  }
+
+  &.small {
+    min-width: 90px;
+    padding: 5px 10px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    span {
+      font-size: $font-size-sm;
+    }
+  }
+
+  &.rounded {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+
+    padding: 0px !important;
+    border-radius: 6px !important;
+    font-size: 18px;
+
+    svg {
+      color: $text-color !important;
+      &.highlighted {
+        color: $primary !important;
+      }
+    }
+
+    &:hover,
+    &.focus {
+      svg {
+        color: $white !important;
+      }
+    }
+
+    &:hover,
+    &.focus {
+      svg {
+        color: $white !important;
+      }
+    }
+  }
+}
+.ant-btn:hover,
+.ant-btn:focus {
+  color: $white !important;
+}

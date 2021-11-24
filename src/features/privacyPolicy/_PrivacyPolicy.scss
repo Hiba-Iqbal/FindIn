@@ -1,0 +1,130 @@
+@import "../../assets/scss/variables";
+
+.user-guid-main {
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  min-height: fit-content;
+
+  .guid-wrapper {
+    // width: 100%;
+    // padding: 20px;
+    // max-width: 1000px;
+    // height: 770px;
+    // overflow: auto;
+    // margin: auto;
+    // box-shadow: 0 0 10px #d4d4d4;
+    // border-radius: 16px;
+    width: 100%;
+    padding: 20px;
+    overflow: auto;
+    margin: auto;
+    border-radius: 16px;
+    .main-heading {
+      font-size: 24px;
+      font-family: $font-subtitle;
+      font-weight: bold;
+    }
+    .ul-div {
+      padding-left: 15px;
+    }
+
+    & > h1 {
+      font-size: 20px;
+      font-family: $font-subtitle;
+      margin: 30px 0 0 0;
+    }
+    & > h3 {
+      font-size: 16px;
+      font-family: $font-subtitle;
+      margin: 30px 0 0 0;
+    }
+    & > h2 {
+      font-size: 16px;
+      font-family: $font-subtitle;
+      margin: 5px 0 0 0;
+    }
+    & > h4 {
+      font-family: $font-subtitle;
+      margin: 0 0 30px 0;
+      font-size: 16px;
+    }
+
+    & > p {
+      margin: 10px 0 0 0;
+      font-size: 14px;
+    }
+
+    ul {
+      padding: 0;
+      li {
+        margin: 10px 0;
+        list-style: none;
+        padding: 0;
+        font-size: 14px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        div {
+          margin-right: 10px;
+          font-size: 14px;
+          font-weight: bold;
+          font-family: "Gordita-Medium";
+          min-width: 28px;
+        }
+      }
+      .abc-point {
+        // padding-left: 15px;
+        text-indent: 38px;
+        .point-bold {
+          font-weight: bold;
+          font-family: $font-subtitle;
+          font-size: 14px;
+        }
+        .overide-right {
+          margin-right: 30px;
+        }
+      }
+    }
+    .c-button {
+      margin: 20px 0 0 0;
+      margin-left: auto;
+    }
+    a {
+      color: $blue;
+      text-decoration: underline;
+      margin: 0 0 0 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .user-guid-main {
+    padding: 10px;
+    .guid-wrapper {
+      padding: 0px !important;
+      p {
+        text-align: left !important;
+      }
+      .ul-div {
+        padding-left: 0px;
+      }
+      ul {
+        li {
+          text-align: left;
+          div {
+            font-size: 12px !important;
+            margin-right: 10px;
+            min-width: 20px !important;
+          }
+        }
+        .abc-point {
+          text-indent: 15px;
+          .overide-right {
+            margin-right: 12px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.c-carousel{
+    overflow-x: hidden;
+    width: 100%;
+
+    .swiper-button-prev, .swiper-button-next {
+        color: $primary;
+
+        &::after ,  &::before {
+
+            font-size: 22px;
+
+        }
+    }
+
+    .swiper-slide {
+
+        padding: 10px 0px 5px 40px;
+
+        .c-job-card{ 
+
+            &.box {
+             width: 250px;
+
+            }   
+
+        }
+        
+    }
+
+}

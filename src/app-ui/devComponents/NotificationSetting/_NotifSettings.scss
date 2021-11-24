@@ -1,0 +1,94 @@
+.notifucation-setting-contaier {
+  // height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 100px 0;
+
+  & .setting-main {
+    & .cust-spaceing {
+      margin: auto 0 30px 0;
+    }
+
+    & .settings-grid {
+      overflow: hidden;
+      border-radius: 30px;
+      padding: 0;
+      box-shadow: 1px 1px 10px $shadow-color;
+
+      & .settings-header {
+        width: 100%;
+        text-align: center;
+        padding: 25px 0;
+        background: linear-gradient(90deg, #020024 0%, #341e5b 0%, #f52666 100%);
+
+        & .notfication-heading {
+          color: $white;
+          font-size: $font-size-lg;
+          margin: 0;
+        }
+      }
+
+      & .set-notification {
+        padding: 20px;
+
+        & .setiings-rows {
+          display: flex;
+          padding: 10px;
+
+          & .settings-grids {
+            width: 50%;
+
+            & .settings-items-heaidns {
+              font-size: $font-size-lg;
+              font-family: $font-bold;
+
+              & .set-heading-desc {
+                font-size: $font-size-sm;
+              }
+            }
+
+            & .inner-items {
+              margin: 0 0 0 20px;
+              padding: 0px 10px;
+
+              & .items-desc {
+                font-size: $font-size-x-sm;
+              }
+
+              & .item-desc-width {
+                width: 300px;
+                margin: -10px 0 10px 0 !important;
+              }
+
+              & .x-form-items {
+                display: flex;
+                align-items: center;
+              }
+
+              & .ant-checkbox + span {
+                padding: 0px 8px;
+                font-size: $font-size-sm;
+              }
+
+              & .ant-form-item-control-input {
+                min-height: 18px;
+              }
+
+              & .ant-switch-small {
+                width: 35px;
+                background: $green;
+              }
+
+              & .toggle-btns {
+                & .toggle-btn-lable {
+                  margin: 4px 0;
+                  font-size: $font-size-sm;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

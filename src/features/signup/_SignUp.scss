@@ -1,0 +1,557 @@
+@import "../../assets/scss/variables";
+
+.signup-container {
+  .first-container {
+    img {
+      &.signup-icon {
+        width: 70px;
+      }
+
+      &.logo {
+        position: relative;
+        top: 30px;
+        width: 500px;
+      }
+
+      width: 100px;
+    }
+    .inner-container {
+      h3 span {
+        font-family: $font-light !important;
+      }
+    }
+  }
+
+  &.no-shadow {
+    box-shadow: none;
+  }
+  &.with-form.height-720 {
+    height: 750px !important;
+  }
+  &.with-form {
+    width: 1100px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px !important;
+    height: 950px;
+    position: relative;
+    box-shadow: 0 0 16px $shadow-color;
+
+    .first-container {
+      width: 480px !important;
+      background: transparent url("../../assets/images/auth/signup-ban-2.jpg") 0% 0% no-repeat padding-box;
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      // border-radius: 20px;
+      // border-bottom-right-radius: 0;
+      // border-top-right-radius: 0;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+
+      &.role-container {
+        width: 200px;
+        height: 100%;
+      }
+
+      &.bg-2 {
+        // background: transparent url("../../assets/images/auth/signup-ban-2.jpg")
+        //   0% 0% no-repeat padding-box;
+        background-size: 100% 100%;
+      }
+
+      &.role-select {
+        // background: transparent
+        //   url("../../assets/images/auth/sign-up-main-back.png") 0% 0% no-repeat
+        //   padding-box;
+        background-size: 100% 100%;
+        padding: 40px 15px;
+        justify-content: flex-start;
+      }
+
+      .logo {
+        position: absolute;
+        top: 180px;
+        width: 260px;
+      }
+
+      h3 {
+        // text-decoration: underline;
+        // text-underline-position: under;
+
+        span {
+          font-size: $font-size-md;
+          color: $white;
+          font-family: $font-medium !important;
+          border-bottom: 1px solid $white;
+          padding-bottom: 6px;
+        }
+      }
+
+      .inner-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 60px 25px 0px 25px;
+
+        .box {
+          height: 72px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: flex-start;
+          margin: 5px 0px 0px 0px;
+
+          &:first-of-type {
+            margin-top: 24px;
+          }
+
+          h3 {
+            font-size: $font-size-md;
+            text-decoration: none;
+            color: $white;
+            margin-bottom: 3px;
+          }
+
+          p {
+            font-size: $font-size-x-sm;
+            color: $white;
+            margin: 0px 0 20px 0 !important;
+            font-family: $font-light !important;
+          }
+
+          img {
+            width: 50px;
+          }
+
+          span {
+            padding: 0px 0px 0px 8px;
+          }
+        }
+      }
+    }
+
+    .second-container {
+      max-width: 740px;
+      width: 100%;
+      padding: 0 40px;
+      max-width: inherit;
+
+      &.signup-option {
+        align-items: center;
+      }
+      .c-button {
+        align-self: flex-end;
+        margin-left: auto;
+        margin-right: 16px;
+      }
+      .c-input {
+        width: 300px;
+      }
+      &.employer-sign-up {
+        display: flex;
+        height: 100%;
+        padding: 40px;
+        align-items: unset;
+
+        .ant-select {
+          width: 100% !important;
+        }
+        .next-btn {
+          margin: 0 auto;
+          padding: 5px 46px;
+        }
+        .next-btn-2 {
+          padding: 5px 46px;
+        }
+        .create-new-company {
+          margin-top: 24px;
+          margin-bottom: 48px;
+          text-align: center;
+          .create-new-btn {
+            color: $primary;
+            cursor: pointer;
+          }
+        }
+        .second-step {
+          height: 100%;
+          position: relative;
+          display: flex;
+          align-items: center;
+          padding-top: 40px;
+          padding-bottom: 20px;
+          .header {
+            position: absolute;
+            top: 0;
+            .back-btn {
+              width: 30px;
+              margin-top: 10px;
+            }
+          }
+          .c-input {
+            width: 100% !important;
+            margin: 0;
+            .react-tel-input {
+              width: 100%;
+            }
+          }
+          .react-tel-input {
+            max-width: unset;
+          }
+          .c-media-picker {
+            justify-content: center;
+            flex-direction: column-reverse;
+          }
+          .avatar-upload {
+            position: relative;
+            .photo-square {
+              width: 140px;
+              height: 140px;
+              box-shadow: 0 0 10px $shadow-color;
+              border-radius: 24px;
+              overflow: hidden;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+            .c-button {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              padding: 0;
+              height: 36px;
+              width: 36px;
+            }
+          }
+          .ant-upload-select {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+          }
+        }
+        .third-step {
+          height: 100%;
+          position: relative;
+          display: flex;
+          align-items: center;
+          padding-top: 40px;
+          padding-bottom: 20px;
+          .header {
+            position: absolute;
+            top: 0;
+            .back-btn {
+              width: 30px;
+              margin-top: 10px;
+            }
+          }
+          .c-input {
+            width: 100% !important;
+            margin: 0;
+            .react-tel-input {
+              width: 100%;
+            }
+          }
+          .react-tel-input {
+            max-width: unset;
+          }
+          .c-media-picker {
+            justify-content: center;
+            flex-direction: column-reverse;
+          }
+          .avatar-upload {
+            position: relative;
+            .photo-square {
+              width: 140px;
+              height: 140px;
+              box-shadow: 0 0 10px $shadow-color;
+              border-radius: 24px;
+              overflow: hidden;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+            .c-button {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              padding: 0;
+              height: 36px;
+              width: 36px;
+            }
+          }
+          .ant-upload-select {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+          }
+        }
+      }
+      &.agency-sign-up {
+        display: flex;
+        height: 100%;
+        padding: 40px;
+        align-items: unset;
+
+        .ant-select {
+          width: 100% !important;
+        }
+        .next-btn {
+          margin: 0 auto;
+          padding: 5px 46px;
+        }
+        .next-btn-2 {
+          padding: 5px 46px;
+        }
+        .create-new-company {
+          margin-top: 24px;
+          margin-bottom: 48px;
+          text-align: center;
+          .create-new-btn {
+            color: $primary;
+            cursor: pointer;
+          }
+        }
+        .second-step {
+          height: 100%;
+          position: relative;
+          display: flex;
+          align-items: center;
+          padding-top: 40px;
+          padding-bottom: 20px;
+          .header {
+            position: absolute;
+            top: 0;
+            .back-btn {
+              width: 30px;
+              margin-top: 10px;
+            }
+          }
+          .c-input {
+            width: 100% !important;
+            margin: 0;
+            .react-tel-input {
+              width: 100%;
+            }
+          }
+          .react-tel-input {
+            max-width: unset;
+          }
+          .c-media-picker {
+            justify-content: center;
+            flex-direction: column-reverse;
+          }
+          .avatar-upload {
+            position: relative;
+            .photo-square {
+              width: 140px;
+              height: 140px;
+              box-shadow: 0 0 10px $shadow-color;
+              border-radius: 24px;
+              overflow: hidden;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+            .c-button {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              padding: 0;
+              height: 36px;
+              width: 36px;
+            }
+          }
+          .ant-upload-select {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+          }
+        }
+        .third-step {
+          height: 100%;
+          position: relative;
+          display: flex;
+          align-items: center;
+          padding-top: 40px;
+          padding-bottom: 20px;
+          .header {
+            position: absolute;
+            top: 0;
+            .back-btn {
+              margin-top: 10px;
+              width: 30px;
+            }
+          }
+          .c-input {
+            width: 100% !important;
+            margin: 0;
+            .react-tel-input {
+              width: 100%;
+            }
+          }
+          .react-tel-input {
+            max-width: unset;
+          }
+          .c-media-picker {
+            justify-content: center;
+            flex-direction: column-reverse;
+          }
+          .avatar-upload {
+            position: relative;
+            .photo-square {
+              width: 140px;
+              height: 140px;
+              box-shadow: 0 0 10px $shadow-color;
+              border-radius: 24px;
+              overflow: hidden;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+            .c-button {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              padding: 0;
+              height: 36px;
+              width: 36px;
+            }
+          }
+          .ant-upload-select {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+          }
+        }
+      }
+      &.jobseeker-sign-up-form {
+        .ant-select {
+          width: 100% !important;
+        }
+        .c-input {
+          width: 100% !important;
+        }
+        .ant-picker {
+          width: 100% !important;
+        }
+        .react-tel-input {
+          width: 100% !important;
+          max-width: unset !important;
+        }
+        .responsive-bottom-section {
+          flex-wrap: wrap;
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+        }
+      }
+    }
+
+    &.role-container {
+      // max-width: 1024px;
+      height: 720px;
+
+      .second-container {
+        height: 500px;
+        justify-content: center;
+      }
+    }
+  }
+  .ant-picker-input > input:placeholder-shown {
+    text-overflow: ellipsis;
+    border: none !important;
+  }
+  .c-input .ant-picker {
+    // box-shadow: none !important;
+    // border: 1px solid $primary;
+  }
+  .react-tel-input {
+    .c-input > input {
+      background-color: transparent !important;
+    }
+  }
+}
+
+.form-actions {
+  display: flex;
+
+  button:last-of-type {
+    margin-left: 1em;
+  }
+}
+
+.confirm-email-card {
+  align-self: center;
+  height: 400px;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .inner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 520px;
+    height: 280px;
+
+    .mail-icon {
+      width: 60px;
+    }
+
+    button {
+      text-decoration: underline;
+    }
+  }
+}
+
+// GLOBAL CSS
+.ant-form-item-explain.ant-form-item-explain-error {
+  color: #ff4d4f;
+  min-height: 0px;
+}
+
+// checkbox under component change
+.ant-checkbox-checked {
+  .ant-checkbox-inner {
+    &:after {
+      transform: rotate(0deg) scale(1) translate(-50%, -50%) !important;
+      width: 10px;
+      height: 10px !important;
+      background: #5271ff !important;
+      left: 50%;
+      border: none !important;
+    }
+    background-color: #ffffff !important;
+    border-color: #5271ff !important;
+  }
+}
+.ant-radio-inner {
+  border-radius: 0px !important;
+  &:after {
+    border-radius: 0px !important;
+  }
+}

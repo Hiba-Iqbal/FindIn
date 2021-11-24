@@ -1,0 +1,100 @@
+@import '../../assets/scss/variables';
+
+.job-seekers-main {
+  h1 {
+    font-family: $font-subtitle;
+    font-size: 2vw;
+    margin: 0 0 20px 0;
+    line-height: 1.5;
+  }
+  p {
+    font-size: 1.3vw;
+    max-width: 450px;
+    font-family: $font-light;
+  }
+  padding: 40px 0;
+  .c-containers {
+    padding: 0 70px;
+    .c-row {
+      display: flex;
+      align-items: center;
+      .w-55 {
+        width: 55%;
+      }
+      .w-40 {
+        width: 40%;
+      }
+      .w-60 {
+        width: 60%;
+      }
+      .text-section {
+        display: flex;
+        justify-content: center;
+        // padding-right: 85px;
+      }
+      .image-section {
+        padding: 0 30px;
+        img {
+          width: 100%;
+          cursor: default;
+        }
+      }
+      .video-section {
+        padding-bottom: 40%;
+        position: relative;
+        .box {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+
+          video {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .center {
+        justify-content: center;
+      }
+      .align-left {
+        justify-content: flex-start;
+      }
+      .align-right {
+        justify-content: flex-end;
+      }
+    }
+    .ml {
+      margin-left: 70px;
+    }
+    .pr-70 {
+      padding-right: 35px;
+    }
+  }
+  .emp-heading {
+    font-size: 2vw;
+    line-height: 50px;
+    font-family: $font-medium;
+  }
+  .blue {
+    color: $blue;
+  }
+  .job-n-demo {
+    display: flex;
+    justify-content: start;
+  }
+  .sections {
+    padding-top: 200px;
+    // h1 {
+    //   font-size: $font-size-30;
+    //   margin: 0 0 28px 0;
+    // }
+    // p {
+    //   font-size: $font-size-lg;
+    //   max-width: 460px;
+    // }
+  }
+}

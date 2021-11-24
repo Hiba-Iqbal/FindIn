@@ -1,0 +1,87 @@
+@import "../../assets/scss/variables";
+
+@media screen and (max-width: 767.5px) {
+  .services-main {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px;
+
+    h1 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .cust-reward-section {
+      width: 100%;
+      padding: 0;
+    }
+    .cust-reward-section {
+      .coming-soon {
+        font-size: $font-size-lg;
+        padding: 0;
+        margin: 0 0 20px 0;
+      }
+      .services-desc {
+        font-size: $font-size-md;
+      }
+      .full-desc {
+        font-size: $font-size-md;
+        padding: 0;
+      }
+      .icons {
+        justify-content: center;
+        margin-top: -10px;
+        img {
+          margin: 0;
+          width: 40px;
+          // min-width: fit-content;
+          // min-height: fit-content;
+          margin: 10px 10px 0 10px;
+        }
+      }
+    }
+    .user-services {
+      margin: 20px 0;
+      width: 100%;
+      padding: 10px;
+
+      .services-form {
+        padding: 20px;
+        p {
+          font-size: $font-size-md;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .services-main {
+    padding: 10px;
+    .cust-reward-section {
+      width: 40%;
+      height: 100%;
+      padding: 100px 0px;
+
+      .coming-soon {
+        font-size: $font-size-lg;
+      }
+      .services-desc {
+        font-size: $font-size-md;
+      }
+      .full-desc {
+        font-size: $font-size-md;
+      }
+      .icons {
+        img {
+          width: 100%;
+          max-width: 50px;
+        }
+      }
+    }
+    .user-services {
+      width: 60%;
+      padding: 20px;
+    }
+  }
+}
