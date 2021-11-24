@@ -31,7 +31,6 @@ const blogDetails = (props) => {
     },
   };
 
-  console.log(unitBlog?.blogsPhoto, "unitBlog");
 
   return (
     <div className="inner-items-wrapper">
@@ -92,7 +91,6 @@ const blogDetails = (props) => {
               <div
                 onClick={() => {
                   setUnitBlog(data);
-                  console.log(data, "fa");
                 }}
                 key={data?.id}
                 className="blog-cards">

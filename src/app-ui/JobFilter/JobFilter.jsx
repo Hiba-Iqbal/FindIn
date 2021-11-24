@@ -95,9 +95,6 @@ const JobFilter = (props) => {
       props.onHide();
     }
   }, [filterApplySuccess]);
-  useEffect(() => {
-    // console.log(selectedCountryId);
-  }, [selectedCountryId]);
 
   const options = [
     { value: "Takashi" },
@@ -111,9 +108,6 @@ const JobFilter = (props) => {
   const [form] = Form.useForm();
 
   const onFinish = (values) => {
-    // console.log("default", values);
-    // console.log("EXTERNALLEY", form.getFieldsValue());
-    // console.log("modified", values);
     if (selectedCountryId && selectedCitiesIds) {
       values.countryId = selectedCountryId;
       values.cityId = selectedCitiesIds[0];
@@ -121,12 +115,10 @@ const JobFilter = (props) => {
     if (selectedCountryId) {
       values.countryId = selectedCountryId;
     }
-    // delete values.salaryRange;
     let o = Object.fromEntries(
       Object.entries(values).filter(([_, v]) => v != null)
     );
     const payload = new URLSearchParams(o).toString();
-    // console.log("values", payload);
 
     dispatch(getFilteredJob(payload));
   };
@@ -151,10 +143,6 @@ const JobFilter = (props) => {
 
   const handleSetCountriesCitiesModal = () => {
     const modalBackdrop = document.querySelector(".modal-backdrop");
-    // props.onHide();
-    // console.log(modalBackdrop.style);
-    // jobFilterRef.current.style.opacity = "0";
-    // console.log(jobFilterRef.current.style);
     setCountriesCitiesModal(true);
   };
   return (
