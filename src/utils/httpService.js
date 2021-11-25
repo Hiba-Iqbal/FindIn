@@ -1,5 +1,4 @@
 import axios from "axios";
-
 import { interceptor } from "./intercepter";
 
 const instance = axios.create({

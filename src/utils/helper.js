@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-
 import moment from "moment";
 
 export const uuid = () => {
@@ -8,8 +7,6 @@ export const uuid = () => {
       .toString(16)
       .substring(1);
   };
-  //return id of format 'aaaaaaaa'-'aaaa'-'aaaa'-'aaaa'-'aaaaaaaaaaaa'
-  // return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
   return s4() + s4() + "-" + s4();
 };
 export const findTitleById = (data, id) => {
@@ -164,9 +161,6 @@ export const jsonToQueryString = (data) => {
 };
 
 export const DobChecker = (current) => {
-  // let customDate = '2018-11-25'
-  // console.log(current)
-  // return current && current > moment(customDate, "YYY-MM-DD")
   var myCurrentDate = new Date();
   var myPastDate = new Date(myCurrentDate);
   return myPastDate.setDate(myPastDate.getDate() - 8);

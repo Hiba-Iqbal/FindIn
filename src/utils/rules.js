@@ -1,5 +1,3 @@
-import { isValidPhoneNumber} from "react-phone-input-international";
-// import {validator as commonValidatior} from "validator";
 const emailRule = [
   {
     type: "email",
@@ -16,8 +14,6 @@ const phoneRule = [
     message: "Please enter your phone number",
   },
   {
-    // pattern: new RegExp(/^[0-9]+[0-9]*$/i),
-    // pattern: new RegExp(/^[0-9]{10}$/i),
     pattern: new RegExp(/^\d{9,}(?:,\d{9,})*$/),
     message: "field accept only numbers",
   },
@@ -194,29 +190,3 @@ export {
   paginationLimit,
   requiredRule,
 };
-
-// Can be use in maintanence phase
-// const commonValidatePhoneNumber = (number) => {
-//   const isValidPhoneNumber = commonValidatior.isMobilePhone(number)
-//   return (isValidPhoneNumber)
-//  }
-
-// const validatePhoneNumber = [
-//   {
-//     required: true,
-//     message: "Please enter your phone number",
-//   },
-//   ({ getFieldValue }) => ({
-//     validator(rule, value) {
-//       if (commonValidatePhoneNumber(getFieldValue('companyPhone'))) {
-//         console.log(getFieldValue('companyPhone'))
-//         return Promise.resolve();
-//       }
-//       else {
-//         console.log("Match nh hoa",getFieldValue('companyPhone'))
-
-//       }
-//       return Promise.reject("field accept only numbers");
-//     },
-//   }),
-// ];
