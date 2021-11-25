@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-
 import { Upload, message } from "antd";
 import { PlusOutlined } from "@ant-design/icons";
-
 import Modal from "../../app-ui/Modal/Modal";
 import Button from "../Button/Button";
 
@@ -72,10 +70,6 @@ function MediaPicker({
             alt="icon"
           />
           <p className="ant-upload-text">Drop your image here or browse</p>
-          {/* <p className="ant-upload-hint">
-                    Support for a single or bulk upload. Strictly prohibit from uploading company data or other
-                    band files
-                     </p> */}
         </Dragger>
         {fileList.length > 0 && (
           <span className="d-flex justify-content-end mt-2">

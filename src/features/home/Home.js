@@ -16,7 +16,6 @@ function Home() {
           <div className="row banner-spacing">
             <div className="col-lg-6 col-xl-6 px-xl-5 px-lg-3 first-banner-heading-container">
               <span className="inner-container">
-                {/* <Fade delay={300} bottom duration={1200}> */}
                 {/* <div> */}
                 <Fade bottom>
                   <h2 className="main-heading">
@@ -58,11 +57,8 @@ function Home() {
                     <p className="small-txt mobile-textalign">
                       It’s free to join, for everyone!
                     </p>
-                    {/* /Join us for free. Launch date: June 2021. */}
                   </div>
                 </Fade>
-                {/* </div> */}
-                {/* </Fade> */}
               </span>
             </div>
 
@@ -142,7 +138,6 @@ function Home() {
             </div>
           </Fade>
         </div>
-        {/* <div className="space"></div> */}
         <Fade bottom duration={1200}>
           <div>
             <div className="home-content-container">
@@ -151,9 +146,7 @@ function Home() {
                 interviews, calls, connections and more.
               </h5>
             </div>
-            {/* <div className="space"></div> */}
-
-            <div className="container-fluid p-0 d-flex justify-content-center">
+c            <div className="container-fluid p-0 d-flex justify-content-center">
               <img
                 className="w-75 img-mobile h-50"
                 src={require("../../assets/images/home/8.png")}
@@ -277,16 +270,13 @@ function Home() {
             </div>
 
             <div className="btm-container-img">
-              {/* <div className="p-0 d-flex justify-content-center"> */}
               <img
                 className="w-100 safari-fix"
                 src={require("../../assets/images/home/20778407.png")}
                 alt=""
               />
-              {/* </div> */}
             </div>
           </div>
-          {/* </Fade> */}
         </div>
       </div>
     </>

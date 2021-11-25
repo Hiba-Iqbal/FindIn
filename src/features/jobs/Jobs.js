@@ -86,9 +86,6 @@ function Jobs() {
   const history = useHistory();
   const searchId = history.location.search;
 
-  // console.log("searchId", searchId);
-  // console.log("history", history);
-
   const [queryParams, setQueryParams] = useState({
     page: 1,
     limit: 100,
@@ -96,7 +93,6 @@ function Jobs() {
 
   const searchCityName = async (id) => {
     try {
-      console.log("id api call", id);
       let res = await getCityById(id);
       res.data.length && setSearchedCityId(res.data[0].title);
     } catch (error) {
@@ -157,13 +153,12 @@ function Jobs() {
     });
 
   const onSearchJob = (values) => {
-    console.log("values", values);
     const qs = { ...queryParams, ...values };
     setQueryParams(qs);
     setSearchedCityId(values.location);
-
     dispatch(getJob({ qs }));
   };
+
   let timeout = 0;
   // const onFinish = () => {};
   const doSearch = (evt) => {
@@ -185,16 +180,9 @@ function Jobs() {
           onHide={ShowFilter}
           setCheckFilterValues={setCheckFilterValues}
         />
-        {/* {console.log("jobs", jobs)} */}
 
         {/* Job List */}
         <div className="find-jobs-section">
-          {/* {isLoading && !jobs.length && !checkFilterValues && (
-            <div className="preloader">
-              <Spin />
-            </div>
-          )} */}
-
           <Form
             className="job-sc"
             onFinish={onSearchJob}
@@ -220,23 +208,6 @@ function Jobs() {
                 <Form.Item
                   name="location"
                   className="find-job-super-select c-input">
-                  {/* <Input
-                    size="small"
-                    className="xs"
-                    type="text"
-                    placeholder="Location"
-                    prefix={
-                      <img className="input-icon" src={locationIcon} alt="ico" />
-                    }></Input> */}
-                  {/* <SuperSelect
-                    placeholder="Desired location"
-                    allowClear={true}
-                    mode={true}
-                    getPopupContainer={(trigger) => trigger.parentNode}
-                    // style={{ width: 200 }}
-                    fetchOptions={cityisDesired}
-                    // className="super-select"
-                  /> */}
                   <SuperSelectFindJobs
                     placeholder="Desired location"
                     allowClear={true}
@@ -244,7 +215,6 @@ function Jobs() {
                     onChange={() => formRef.current.submit()}
                     getPopupContainer={(trigger) => trigger.parentNode}
                     fetchOptions={cityisDesired}
-                    // className="small"
                   />
                 </Form.Item>
               </div>
@@ -267,7 +237,6 @@ function Jobs() {
           </Form>
 
           <div className="jobs-list">
-            {/* {console.log(isLoading, !jobs.length, !checkFilterValues)} */}
             {isLoading ||
               (!jobs.length &&
                 !checkFilterValues &&
@@ -282,19 +251,6 @@ function Jobs() {
               form.getFieldValue("jobTitleName")) &&
               !jobs.length && (
                 <>
-                  {/* <Empty
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    height: "95%",
-                    justifyContent: "center",
-                  }}
-                  description={"No job"}
-                  image={require("../../assets/images/icons/noData.png")}
-                  imageStyle={{
-                    height: 150,
-                  }}
-                /> */}
                   <p>
                     We couldn't find any jobs that matches your search. Your
                     Search for job <b> {form.getFieldValue("jobTitleName")} </b>{" "}
@@ -315,9 +271,6 @@ function Jobs() {
                       onClick={() => {
                         setQueryParams({ page: 1, limit: 100 });
                       }}
-                      // onClick={onApplyJob}
-                      // loading={applyJobLoading}
-                      // need to use reset job functionality here
                     >
                       Back to jobs
                     </Button>
@@ -397,19 +350,3 @@ function Jobs() {
 }
 
 export default Jobs;
-
-const CEmpty = ({ description }) => (
-  <Empty
-    style={{
-      display: "flex",
-      flexDirection: "column",
-      height: "100%",
-      justifyContent: "center",
-    }}
-    image={require("../../assets/images/icons/noData.png")}
-    imageStyle={{
-      height: 150,
-    }}
-    description={description}
-  />
-);

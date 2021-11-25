@@ -101,10 +101,7 @@ function JobCard({ job = {}, type, onClick }) {
             {type !== "box" && (
               <span>
                 <p>{job.company?.companyName}</p>
-
-                {/* <p>Open till {readableDate(job.endDate)}</p> */}
                 <p>Ends in {dayTimeLeftFromNowTrue(job.expiredAt)}</p>
-                {/* {console.log(readableDate(job.expiredAt))} */}
               </span>
             )}
           </span>
@@ -165,15 +162,6 @@ function JobCard({ job = {}, type, onClick }) {
         {type !== "box" && getTagByType(job.applied)}
 
         {job?.isFeature && getTagByType(JobTagTypes.FEATURED)}
-        {/* <Checkbox className="jobcard-checkbox-mobile job-tag" /> */}
-
-        {/* {type !== "box" && getTagByType(job.MESSAGE)} */}
-
-        {/* {type !== "box" && getTagByType(JobTagTypes.SHORTLISTED)}
-        
-        {type !== "box" && getTagByType(JobTagTypes.APPLIED)} */}
-
-        {/* {job?.featured && getTagByType(JobTagTypes.FEATURED)} */}
       </span>
     </div>
   );

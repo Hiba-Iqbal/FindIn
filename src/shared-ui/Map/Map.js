@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
-
 import { getLat, getLng } from "../../utils/helper";
 
 export const Map = ({ location, data, zoom = 13 }) => {

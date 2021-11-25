@@ -1,17 +1,8 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
-
-import { Select, Spin, Space } from "antd";
+import { Select, Spin } from "antd";
 import useRefState from "react-usestateref";
-
 import { Option } from "antd/lib/mentions";
 import { debounce } from "../../utils/powerFunctions";
-
-const initOptions = [
-  {
-    label: "Select",
-    value: "",
-  },
-];
 
 const getOptions = (data, keys) => {
   return data.map((d) => ({
@@ -37,10 +28,10 @@ export const SuperSelectFindJobs = ({
   keys = ["id", "title"],
   ...props
 }) => {
+
   const fetchOnSearchRef = useRef(0);
   const fetchOnScrollRef = useRef(1);
   const totalPages = useRef(0);
-
   const [searchOptions, setSearchOptions] = useState([]);
   const [options, setOptions, optionsRef] = useRefState([]);
   const [newOptions, setNewOptions] = useState([]);
@@ -98,7 +89,6 @@ export const SuperSelectFindJobs = ({
         }
         const _options = getOptions(_data, keys);
         if (fetchId !== fetchOnSearchRef.current) {
-          // for fetch callback order
           return;
         }
 
@@ -144,7 +134,6 @@ export const SuperSelectFindJobs = ({
       maxTagCount={maxTagCount}
       disabled={disabled}
       showArrow={false}
-      // showArrow={mode ? false : true}
       mode={mode}
       filterOption={false}
       showSearch={showSearch}

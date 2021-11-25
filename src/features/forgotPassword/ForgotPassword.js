@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
-
 import { FaRedo } from "react-icons/fa";
 import { Input, Form, Steps } from "antd";
 import { useHistory } from "react-router";
-
 import * as rules from "../../utils/rules";
 import Button from "../../shared-ui/Button/Button";
 import companyLogo from "../../assets/images/logo/logo-md.png";
@@ -24,7 +22,6 @@ import {
   postVerifyEmail,
   postVerifyToken,
 } from "./thunk";
-
 import "./_ForgotPassword.scss";
 
 const { Step } = Steps;
@@ -193,7 +190,6 @@ function ForgotPassword() {
       <div className="c-card-container login-container">
         <div className="first-container">
           <img src={companyLogo} alt="logo" />
-          {/* <p className="ml-4">The <b>smartest</b> job site in the Middle East.</p> */}
         </div>
         <div className="second-container">
           <Form className="c-form" onFinish={onFinish} layout="vertical">

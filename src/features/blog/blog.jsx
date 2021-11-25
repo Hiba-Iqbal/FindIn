@@ -9,7 +9,6 @@ import {
   selectBlogList,
   selectOtherBlogs,
   selectListLoading,
-  removeCurrentBlog,
 } from "./slice";
 import { getBlogList, getAuthorBlogs, getOtherBlogs } from "./thunk";
 import moment from "moment";
@@ -37,12 +36,6 @@ const Blog = () => {
     if (Object.keys(unitBlog).length) {
       setAuthorId(unitBlog?.blogAuthor?.id);
     }
-    // if (unitBlog?.id) {
-    //   const payload = {
-    //     id: unitBlog?.id,
-    //   };
-    //   dispatch(removeCurrentBlog(payload));
-    // }
   }, [unitBlog]);
 
   useEffect(() => {
