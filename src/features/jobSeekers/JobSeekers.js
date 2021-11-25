@@ -1,9 +1,5 @@
 import React from "react";
 import { useHistory } from "react-router";
-
-import Slide from "react-reveal/Slide";
-import Bounce from "react-reveal/Bounce";
-
 import Button from "../../shared-ui/Button/Button";
 import "./_JobSeekers.scss";
 import "./_Responsive.scss";
@@ -40,7 +36,7 @@ function JobSeekers() {
             <div>
               <h1>Follow companies</h1>
               <p>
-                Follow your favourite companies and stay up to date with all of
+                Follow your favorite companies and stay up to date with all of
                 their current and future jobs.
               </p>
             </div>

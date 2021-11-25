@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
 import { Input, Form, Checkbox, Alert } from "antd";
 import { EyeInvisibleOutlined, EyeTwoTone } from "@ant-design/icons";
-
 import * as Rules from "../../utils/rules";
 import { userTypes } from "../../utils/constants";
 import Button from "../../shared-ui/Button/Button";
@@ -22,7 +20,6 @@ import "./_Responsive.scss";
 
 function Login() {
   const dispatch = useAppDispatch();
-  const [userType, setUserType] = useState(userTypes.JOBSEEKER.title);
   const [rememberMe, setRememberMe] = useState(false);
   const isLoading = useAppSelector(selectLoginStatus);
   const loginSuccess = useAppSelector(selectLogin);
@@ -36,7 +33,6 @@ function Login() {
 
   useEffect(() => {
     if (loginSuccess === true) {
-      // debugger;
       const token = loginResponse.token;
       const roleId = loginResponse.roleId;
       const role = roles.find((r) => r.id === roleId);
@@ -44,7 +40,6 @@ function Login() {
         localStorage.setItem("token", token);
         localStorage.setItem("role", JSON.stringify(role));
       }
-
       const url = userTypes[role.title.toUpperCase()].url;
       if (url) {
         window.location = `${url}/?token=${token}`;
@@ -52,22 +47,6 @@ function Login() {
     }
   }, [loginSuccess]);
 
-  const getIsActive = (type) => {
-    return userType === type ? "active" : "";
-  };
-
-  const getFormTitle = (type) => {
-    switch (type) {
-      case userTypes.AGENCY.title:
-        return "Agency login";
-      case userTypes.EMPLOYER.title:
-        return "Employer login";
-      case userTypes.JOBSEEKER.title:
-        return "Job Seeker login";
-      default:
-        return "";
-    }
-  };
 
   const onFinish = (values) => {
     console.log("values: ", values);
@@ -88,7 +67,6 @@ function Login() {
             src={require("../../assets/images/logo/logo-white.png")}
             alt="logo"
           />
-          {/* <p className="ml-4">The <b>smartest</b> job site in the Middle East.</p> */}
           <img
             className="login-background-image"
             src={require("../../assets/images/auth/login-background.png")}
@@ -96,13 +74,6 @@ function Login() {
           />
         </div>
         <div className="second-container">
-          {/* <div className="user-type">
-            {Object.keys(userTypes).map((ut) => (
-              <span className={`${getIsActive(userTypes[ut].title)}`} onClick={() => setUserType(userTypes[ut].title)}>
-                {userTypes[ut].title}
-              </span>
-            ))}
-          </div> */}
 
           {/* Form */}
           <Form
@@ -110,9 +81,6 @@ function Login() {
             className="c-form login-form"
             layout="vertical"
             onFinish={onFinish}>
-            {/* <h3 className="form-title w-100 mb-4">
-              <mark>{getFormTitle(userType)}</mark>
-            </h3> */}
 
             <label>Email *</label>
             <Form.Item name="email" className="c-input" rules={Rules.emailRule}>
