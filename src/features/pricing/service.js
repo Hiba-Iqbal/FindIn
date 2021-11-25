@@ -1,8 +1,8 @@
-import { post, get, put, del } from "../../utils/httpService";
+import { get } from "../../utils/httpService";
 
 const SERVICE_URLS = {
-  getPackages: () => `/jobsmideast-package/employer`,
-  getPackageAddOns: () => `/jobsmideast-package/employer-addons`,
+    getPackages: () => `/jobsmideast-package/employer`,
+    getPackageAddOns: () => `/jobsmideast-package/employer-addons`,
 };
 
 export const getPackages = () => get(SERVICE_URLS.getPackages());

@@ -92,29 +92,8 @@ const Pricing = () => {
                   </div>
                 </div>
               ))}
-              {/* <div className="pricing-card">
-                <div className="pricing-header">
-                  <div className="top-items-head">VIP package</div>
-                  <div className="top-items-head">
-                    {" "}
-                    <Button themecolor={""} className="m-auto" type="small">
-                      <Popover content="coming soon">
-                        <Link>Customize</Link>
-                      </Popover>
-                    </Button>
-                  </div>
-                </div>
-              </div> */}
             </div>
           </div>
-          {/* <div className="pricing-image">
-            <div className="image-section">
-              <img
-                src={require("../../assets/images/pricing/an-african-friends_197531-3755.png")}
-                alt=""
-              />
-            </div>
-          </div> */}
         </div>
       </div>
       <div className="pricing-details">
