@@ -7,12 +7,9 @@ import { HiCheck } from "react-icons/hi";
 import { getPackages } from "./thunk";
 import { selectError, selectPackages, selectStatus } from "./slice";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
-import { showErrorMessage, showSuccessMessage } from "../../utils/message";
-import { Popover, Spin } from "antd";
-import { Link, useHistory } from "react-router-dom";
-
+import { showErrorMessage} from "../../utils/message";
+import { Popover } from "antd";
 const Pricing = () => {
-  const history = useHistory();
   const dispatch = useAppDispatch();
   const packages = useAppSelector(selectPackages);
   const errorMessage = useAppSelector(selectError);
@@ -134,7 +131,7 @@ const Pricing = () => {
             <p>No contracts, cancel at any time!</p>
           </div>
           <p className="direct-message">
-            Direct messaging a company maximises your chances by up to 80%!
+            Direct messaging a company maximizes your chances by up to 80%!
           </p>
         </div>
       </div>
@@ -181,7 +178,7 @@ const Pricing = () => {
             <div className="checks">
               <HiCheck />
             </div>
-            <p>Number of questionnaries per month: 200 </p>
+            <p>Number of questionnaires per month: 200 </p>
           </div>
           <div className="points">
             <div className="checks">

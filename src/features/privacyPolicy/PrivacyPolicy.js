@@ -10,7 +10,7 @@ const PrivacyPolicy = () => {
         <p>
           This privacy policy applies between you, the User of this Website and
           Jobsmideast Ltd, the owner and provider of this Website.Jobsmideast
-          Ltdtakes the privacy of your information very seriously. This privacy
+          Ltd takes the privacy of your information very seriously. This privacy
           policy applies to our use of any and all Data collected by us or
           provided by you in relation to your use of the Website.
         </p>
@@ -72,15 +72,15 @@ const PrivacyPolicy = () => {
           <ul>
             <li>
               <div>3.</div>
-              This privacy policy applies only to the actions ofJobsmideast
-              Ltdand Users with respect to this Website. It does not extend to
+              This privacy policy applies only to the actions of Jobsmideast
+              Ltd and Users with respect to this Website. It does not extend to
               any websites that can be accessed from this Website including, but
               not limited to, any links we may provide to social media websites.
             </li>
             <li>
               <div>4.</div>
-              This privacy policy applies only to the actions ofJobsmideast
-              Ltdand Users with respect to this Website. It does not extend to
+              This privacy policy applies only to the actions of Jobsmideast
+              Ltd and Users with respect to this Website. It does not extend to
               any websites that can be accessed from this Website including, but
               not limited to, any links we may provide to social media websites.
             </li>
@@ -105,7 +105,7 @@ const PrivacyPolicy = () => {
                   date of birth;
                 </li>
                 <li>
-                  <div>c.</div>agender;
+                  <div>c.</div>gender;
                 </li>
                 <li>
                   <div>d.</div>job title;
@@ -137,7 +137,7 @@ const PrivacyPolicy = () => {
                 </li>
                 <li>
                   <div>l.</div>a list of URLs starting with a referring site,
-                  your activity on this Website, and thesite you exit to
+                  your activity on this Website, and the site you exit to
                   (automatically collected);
                 </li>
                 <li>
@@ -178,7 +178,7 @@ const PrivacyPolicy = () => {
           <ul>
             <li>
               <div>7.</div>
-              Jobsmideast Ltdwill collect your Data in a number of ways, for
+              Jobsmideast Ltd will collect your Data in a number of ways, for
               example.
             </li>
             <div className="abc-point">
@@ -186,7 +186,7 @@ const PrivacyPolicy = () => {
                 <li>
                   <div>a.</div>
                   when you contact us through the Website, by telephone, post,
-                  e-mail or throughany other means;
+                  e-mail or through any other means;
                 </li>
                 <li>
                   <div>b.</div>
@@ -217,7 +217,7 @@ const PrivacyPolicy = () => {
           <ul>
             <li>
               <div>8.</div>
-              Jobsmideast Ltdwill receive Data about you from the following
+              Jobsmideast Ltd will receive Data about you from the following
               third parties.
             </li>
             <div className="abc-point">
@@ -352,7 +352,7 @@ const PrivacyPolicy = () => {
                   <div>b.</div>
                   for other types of e-marketing, we are required to obtain your
                   explicit consent; that is, you need to take positive and
-                  affirmative action when consenting by, forexample, checking a
+                  affirmative action when consenting by, for example, checking a
                   tick box that we'll provide.
                 </li>
                 <li>
@@ -364,7 +364,7 @@ const PrivacyPolicy = () => {
                 <li>
                   <div>d.</div>contact for market research purposes which may be
                   done using email, telephone, fax or mail. Such information may
-                  be used to customise or update the Website;
+                  be used to customize or update the Website;
                 </li>
               </ul>
             </div>
@@ -409,7 +409,7 @@ const PrivacyPolicy = () => {
         <p>
           You may not access or use the Site for any purpose other than that for
           which we make the Site available. The Site may not be used in
-          connection with any commercial endeavours except those that are
+          connection with any commercial endeavour except those that are
           specifically endorsed or approved by us.
         </p>
         <p>As a user of the Site, you agree not to.</p>
@@ -427,7 +427,7 @@ const PrivacyPolicy = () => {
           </li>
           <li>
             <div>3.</div> Circumvent, disable, or otherwise interfere with
-            security-related features ofthe Site, including features that
+            security-related features of the Site, including features that
             prevent or restrict the use or copying of any Content or enforce
             limitations on the use of the Site and/or the Content contained
             therein.
@@ -442,7 +442,7 @@ const PrivacyPolicy = () => {
           </li>
           <li>
             <div>6.</div> Make improper use of our support services or submit
-            false reports of abuseor misconduct.
+            false reports of abuser misconduct.
           </li>
           <li>
             <div>7.</div> Use the Site in a manner inconsistent with any
@@ -463,7 +463,7 @@ const PrivacyPolicy = () => {
           </li>
           <li>
             <div>10.</div> Engage in any automated use of the system, such as
-            using scripts to sendcomments or messages, or using any data mining,
+            using scripts to send comments or messages, or using any data mining,
             robots, or similar data gathering and extraction tools.
           </li>
           <li>
@@ -479,7 +479,7 @@ const PrivacyPolicy = () => {
           </li>
           <li>
             <div>14.</div> Upload or transmit (or attempt to upload or to
-            transmit) any material thatacts as a passive or active information
+            transmit) any material that acts as a passive or active information
             collection or transmission mechanism,including without limitation,
             clear graphics interchange formats (“gifs”), 1×1 pixels, web bugs,
             cookies, or other similar devices (sometimes referred to as
@@ -594,7 +594,7 @@ const PrivacyPolicy = () => {
             <div>8.</div>
             Your Contributions are not used to harass or threaten (in the legal
             sense of those terms) any other person and to promote violence
-            against a specific person or class ofpeople.
+            against a specific person or class of people.
           </li>
           <li>
             <div>9.</div>
@@ -621,7 +621,7 @@ const PrivacyPolicy = () => {
           <li>
             <div>13.</div>
             Your Contributions do not include any offensive comments that are
-            connected torace, national origin, gender, sexual preference, or
+            connected to race, national origin, gender, sexual preference, or
             physical handicap.
           </li>
           <li>
