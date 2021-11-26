@@ -31,8 +31,6 @@ const blogDetails = (props) => {
     },
   };
 
-  console.log(unitBlog?.blogsPhoto, "unitBlog");
-
   return (
     <div className="inner-items-wrapper">
       <div className="blog-cover">
@@ -71,7 +69,7 @@ const blogDetails = (props) => {
               </div>
             </div>
             <div className="inner-box2">
-              <h3>Other Content By {unitBlog?.blogAuthor?.name}</h3>
+              <h3>Other Content : By {unitBlog?.blogAuthor?.name}</h3>
               <Carousel responsive={responsive}>
                 {otherBlogsByAuthor.map((value, key) => (
                   <div className="inner-carousel" key={key}>
@@ -85,14 +83,13 @@ const blogDetails = (props) => {
         </div>
         <div className="other-blogs">
           <h1 className="other-blogs-title">
-            Other blogs you may be intrested in
+            Other blogs you may be interested in
           </h1>
           <Carousel responsive={responsive}>
             {OtherBlogs.map((data) => (
               <div
                 onClick={() => {
                   setUnitBlog(data);
-                  console.log(data, "fa");
                 }}
                 key={data?.id}
                 className="blog-cards">
