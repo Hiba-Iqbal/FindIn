@@ -21,10 +21,7 @@ export const slice = createSlice({
       const {
         payload: { id },
       } = action;
-      console.log(id, "id");
-      console.log(state.authorBLogs, "authorBLogs");
       let arr = state.authorBLogs.filter((item) => id !== item.id);
-      console.log(arr, "jasdkajsdkj");
     },
   },
   extraReducers: (builder) => {

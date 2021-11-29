@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
-
-import { Input, Form, Select, Switch, Slider, Divider, Row, Col } from "antd";
-
+import { Input, Form, Select, Switch, Divider, Row, Col } from "antd";
 import Modal from "../../shared-ui/Modal/Modal";
 import Button from "../../shared-ui/Button/Button";
-import * as Rules from "../../utils/rules";
 import {
   getCity,
   getCountry,
@@ -20,11 +17,6 @@ import {
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import {
   selectCountries,
-  selectEmploymentTypes,
-  selectJobTitles,
-  selectAccommodations,
-  selectCategories,
-  selectJobTitlesById,
   selectSalaryType,
   selectQualifications,
   selectSuitableFor,
@@ -32,8 +24,6 @@ import {
 } from "../../features/jobs/slice";
 import CountryCityModal from "../CountryCityModal/CountryCityModal";
 import { getTitleById } from "../../utils/helper";
-import { useForm } from "antd/lib/form/Form";
-import { SuperSelect } from "../../shared-ui/SuperSelect/SuperSelect";
 import { ReloadOutlined } from "@ant-design/icons";
 
 import { SuperSelectWithSelect } from "../../shared-ui/SuperSelect/SuperSelect-withSelect";
@@ -43,27 +33,19 @@ import {
   getEmploymentType,
   getQualification,
 } from "../../features/jobs/service";
-import { useRef } from "react";
 import { getCategory, getJobTitles, getJobtype } from "./service";
 
 const { Option } = Select;
 
 const JobFilter = (props) => {
-  const jobFilterRef = useRef();
   const [selectedCitiesIds, setSelectedCitiesIds] = useState([]);
   const [selectedCountryId, setSelectedCountryId] = useState(null);
   const [maxSalaryLimit, setMaxSalaryLimit] = useState(1000000);
   const [jobInfoForm] = Form.useForm();
 
   const dispatch = useAppDispatch();
-  const jobTitles = useAppSelector(selectJobTitles);
   const [countriesCitiesModal, setCountriesCitiesModal] = useState(false);
-  const employmentTypes = useAppSelector(selectEmploymentTypes);
   const countries = useAppSelector(selectCountries);
-  const accommodations = useAppSelector(selectAccommodations);
-  const qualifications = useAppSelector(selectQualifications);
-  const categories = useAppSelector(selectCategories);
-  const jobTitlesById = useAppSelector(selectJobTitlesById);
   const salaryType = useAppSelector(selectSalaryType);
   const suitableFor = useAppSelector(selectSuitableFor);
   const filterApplySuccess = useAppSelector(selectFilterApplySuccess);
@@ -71,13 +53,10 @@ const JobFilter = (props) => {
   const [selectedSector, setSelectedSector] = useState(true);
 
   useEffect(() => {
-    // dispatch(getCountry());
     dispatch(getCountryisDesired());
     dispatch(getCity());
-
     dispatch(getFieldOfStudy());
     dispatch(getGrade());
-
     dispatch(getSalaryType());
     dispatch(getSuitableFor());
   }, []);
@@ -95,9 +74,6 @@ const JobFilter = (props) => {
       props.onHide();
     }
   }, [filterApplySuccess]);
-  useEffect(() => {
-    // console.log(selectedCountryId);
-  }, [selectedCountryId]);
 
   const options = [
     { value: "Takashi" },
@@ -111,9 +87,6 @@ const JobFilter = (props) => {
   const [form] = Form.useForm();
 
   const onFinish = (values) => {
-    // console.log("default", values);
-    // console.log("EXTERNALLEY", form.getFieldsValue());
-    // console.log("modified", values);
     if (selectedCountryId && selectedCitiesIds) {
       values.countryId = selectedCountryId;
       values.cityId = selectedCitiesIds[0];
@@ -151,10 +124,6 @@ const JobFilter = (props) => {
 
   const handleSetCountriesCitiesModal = () => {
     const modalBackdrop = document.querySelector(".modal-backdrop");
-    // props.onHide();
-    // console.log(modalBackdrop.style);
-    // jobFilterRef.current.style.opacity = "0";
-    // console.log(jobFilterRef.current.style);
     setCountriesCitiesModal(true);
   };
   return (
