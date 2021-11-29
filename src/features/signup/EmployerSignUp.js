@@ -1,14 +1,9 @@
 import React, { useEffect, useState } from "react";
-import useRefState from "react-usestateref";
-
 import { Link, useHistory, useLocation } from "react-router-dom";
 import { Input, Form, Select, Checkbox, Alert, Row, Col, Upload } from "antd";
 import { PlusOutlined } from "@ant-design/icons";
 import queryString from "query-string";
-import { DobChecker } from "../../utils/helper";
 import * as Rules from "../../utils/rules";
-import TermsConditions from "./TermsConditions";
-import Modal from "../../shared-ui/Modal/Modal";
 import Button from "../../shared-ui/Button/Button";
 import {
   getCompany,
@@ -22,7 +17,6 @@ import PhoneInput from "react-phone-input-international";
 import MediaPicker from "../../shared-ui/MediaPicker/MediaPicker";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { SuperSelect } from "../../shared-ui/SuperSelect/SuperSelect";
-// import SelectWithAddItem from "../../shared-ui/SelectWithAddItem/SelectWithAddItem";
 import {
   getRole,
   getFindUsPlatform,
@@ -46,14 +40,9 @@ import {
   selectProfileImage,
   removePreUploadedProfileImage,
   removePreUploadedCompanyLogo,
-  removePreExistingErrorMessages,
   selectCompanyLogo,
   setSignupStateFalse,
 } from "./slice";
-// import AvatarPicker from "../../shared-ui/AvatarPicker/AvatarPicker";
-import { SuperSelectFindJobs } from "../../shared-ui/superselectfindjobs/superselectfindjobs";
-import CookiePolicy from "../cookiePolicy/CookiePolicy";
-import PrivacyPolicy from "../privacyPolicy/PrivacyPolicy";
 import { SuperSelectEmployerSignup } from "../../shared-ui/superselectfindjobs/superselectEmployerSignup";
 
 const { Option } = Select;
@@ -66,9 +55,6 @@ function EmployerSignUp() {
   const [isCreateCompany, setCreateCompany] = useState(false);
   const [currentStep, setCurrentStep] = useState(1);
   const [formData, setFormData] = useState({});
-  const [termsModalShow, setTermsModalShow] = useState(false);
-  const [cookiesModalShow, setCookiesModalShow] = useState(false);
-  const [privacyPolicyModalShow, setPrivacyPolicyModalShow] = useState(false);
   const [countryCode, setCountryCode] = useState("gb");
   const [agreeToTerms, setAgreeToTerms] = useState(false);
   const [categoryId, setCategoryId] = useState(null);
@@ -77,9 +63,6 @@ function EmployerSignUp() {
   const roles = useAppSelector(selectRole);
   const findUsPlatforms = useAppSelector(selectFindUsPlatform);
   const signupSuccess = useAppSelector(selectEmployerSignup);
-  const companies = useAppSelector(selectCompany);
-  const countries = useAppSelector(selectCountry);
-  const jobTitles = useAppSelector(selectJobTitles);
   const isLoading = useAppSelector(selectLoadingStatus);
   const errorMessage = useAppSelector(selectErrorMessage);
   const countryByIp = useAppSelector(selectCountryByIp);
@@ -576,27 +559,6 @@ function EmployerSignUp() {
             </div>
             {!isCreateCompany && (
               <Row gutter={[32, 32]}>
-                {/* <Col style={{ marginBottom: "24px" }} span={24}>
-                  <Upload
-                    accept="image/*"
-                    beforeUpload={profileImageBeforeUpload}
-                    showUploadList={false}
-                  >
-                    <div className="avatar-upload">
-                      <div className="photo-square">
-                        {profileImage && <img src={profileImage?.url} alt="" />}
-                      </div>
-                      {!profileImage && (
-                        <Button>
-                          <PlusOutlined />
-                        </Button>
-                      )}
-                    </div>
-                    <div style={{ fontSize: "12px", marginTop: "12px" }}>
-                      Upload profile photo
-                    </div>
-                  </Upload>
-                </Col> */}
                 <Col
                   style={{ zIndex: 300 }}
                   span={12}

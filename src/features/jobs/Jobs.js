@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
-import { Form, Empty, Spin } from "antd";
+import { Form, Spin } from "antd";
 import { SuperSelectFindJobs } from "../../shared-ui/superselectfindjobs/superselectfindjobs";
 import { transformJobData } from "./transformers";
 import { useForm } from "antd/lib/form/Form";
