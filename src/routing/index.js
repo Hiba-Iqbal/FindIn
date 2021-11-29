@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import { Route, Switch, useLocation, useHistory } from "react-router-dom";
 import storage from "redux-persist/lib/storage";
-
 import {
   Home,
   Test,
@@ -16,7 +15,6 @@ import {
   JobSeekers,
   Pricing,
   Jobs,
-  Services,
   TermsAndCondition,
   CookiePolicy,
   PrivacyPolicy,
@@ -37,12 +35,7 @@ function Routing() {
   const history = useHistory();
   const logout = new URLSearchParams(param).get("logout");
   const pathname = history.location.pathname;
-
-  // React.useEffect(() => {
-  //   console.log("index.js");
-  // }, []);
-
-  console.log(logout);
+  
   if (logout == "true") {
     localStorage.clear();
     persistor.flush();
@@ -51,7 +44,6 @@ function Routing() {
     pathname.includes("/share-job-details/") ||
     pathname.includes("/share-user-details/")
   ) {
-    console.log("persisting");
   } else {
     const token = localStorage.getItem("token");
     const r = localStorage.getItem("role");
@@ -59,7 +51,6 @@ function Routing() {
       const role = JSON.parse(r);
       if (role && role.title) {
         const url = userTypes[role.title.toUpperCase()].url;
-        console.log("url based role", url);
         if (url) {
           window.location = `${url}/?token=${token}`;
         }
@@ -77,7 +68,6 @@ function Routing() {
         <Route exact path="/signup" component={SignUp} />
         <Route exact path="/user-signup" component={JobSeekerSignUp} />
         {/* D O W N ____ F O R _____ N O W */}
-        {/* <Route exact path="/services" component={Services} />*/}
         <Route exact path="/forgot-password" component={ForgotPassword} />
         <Route exact path="/agency-signup" component={AgencySignUp} />
         <Route exact path="/confirm-email" component={ConfirmEmail} />
@@ -100,11 +90,9 @@ function Routing() {
         <Route exact path="/jobs" component={Jobs} />
         <Route exact path="/blogs" component={Blog} />
         <Route exact path="/application/:id" component={Application} />
-
         <Route path="/test" component={Test} />
         <Route path="/share-job-details/:id" component={ShareJobDetails} />
         <Route path="/share-user-details/:id" component={ShareUserProfile} />
-
         <Route path="*" component={NotFound} />
       </Switch>
       <Footer />

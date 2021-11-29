@@ -20,8 +20,6 @@ function JobsCarousel({ jobs = [] }) {
         spaceBetween={10}
         slidesPerView={3}
         navigation
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
         shouldSwiperUpdate={true}
         observer={true}
         breakpoints={{

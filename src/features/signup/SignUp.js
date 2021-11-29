@@ -47,10 +47,7 @@ function SignUp() {
 
                         <Radio.Group onChange={onChange} value={userType}>
                             <Radio value={userTypes.JOBSEEKER.title}>I'm looking for jobs</Radio>
-
                             <Radio value={userTypes.EMPLOYER.title}>I'm an employer</Radio>
-
-                            {/* <Radio value={userTypes.AGENCY.title}>I'm a recruiter</Radio> */}
                         </Radio.Group>
                     </span>
 
@@ -98,7 +95,7 @@ function SignUp() {
                             </span>
                         </div>
                     </span>
-                </div>{" "}
+                </div>
             </div>
         </div>
     );
