@@ -70,7 +70,6 @@ function JobSeekerSignUp() {
   const errorMessage = useAppSelector(selectErrorMessage);
 
   const countryByIp = useAppSelector(selectCountryByIp);
-  console.log(countryByIp);
 
   useEffect(() => {
     dispatch(getRole());

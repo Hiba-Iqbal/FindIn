@@ -87,7 +87,6 @@ function EmployerSignUp() {
   const profileImage = useAppSelector(selectProfileImage);
   const companyLogo = useAppSelector(selectCompanyLogo);
   useEffect(() => {
-    // let params = queryString.parse(location.search);
     dispatch(getRole());
     dispatch(getFindUsPlatform());
     dispatch(getCity());
@@ -101,13 +100,6 @@ function EmployerSignUp() {
       setCurrentStep(2);
     }
   }, [QS]);
-
-  // const Demo = ({ form: { setFieldsValue } }) => {
-  //   React.useEffect(() => {
-  //     setFieldsValue({
-  //       username: 'Bamboo',
-  //     });
-  //   }, []);
 
   useEffect(() => {
     dispatch(removePreUploadedProfileImage());
@@ -126,7 +118,6 @@ function EmployerSignUp() {
   }, [signupSuccess]);
 
   const onFinish = (values) => {
-    console.log("onFinish", values);
     setFormData({ ...formData, ...values, companyLogo: companyLogo?.url });
 
     if (isCreateCompany && !companyLogo) {
@@ -197,11 +188,6 @@ function EmployerSignUp() {
     setCategoryId(Number(v));
   };
 
-  // useEffect(() => {
-  //   const _CId = CategoryIdRef.current;
-  //   setCategoryId(Number(_CId));
-  // }, [categoryId]);
-
   const profileImageBeforeUpload = (file) => {
     const payload = new FormData();
     payload.append("file", file, file.name);
@@ -221,11 +207,6 @@ function EmployerSignUp() {
     dispatch(removePreUploadedProfileImage());
     setCurrentStep(2);
   };
-
-  // useEffect(() => {
-  //   setCategoryId(categoryId);
-  //   console.log("useeffect", categoryId);
-  // }, [categoryId]);
 
   const renderSteps = (currentStep) => {
     switch (currentStep) {
