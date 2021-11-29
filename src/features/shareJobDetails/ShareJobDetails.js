@@ -1,10 +1,7 @@
 import React from "react";
-import { useAppDispatch } from "../../store/hooks";
-import { getJobDeatls } from "./thunk";
 import { getShareJobDeatils } from "./service";
 import defaultImage from "./../../assets/images/default.png";
 import defaultBanner from "./../../assets/images/sample/job-banner.png";
-
 import { createMarkup, getTitleById, useWindowSize } from "../../utils/helper";
 import { useHistory, Link } from "react-router-dom";
 import moment from "moment";
@@ -22,7 +19,6 @@ const ShareJobDetails = ({
     params: { id },
   },
 }) => {
-  const dispatch = useAppDispatch();
   const [data, setData] = React.useState(null);
   const history = useHistory();
   const pathname = history.location.pathname;

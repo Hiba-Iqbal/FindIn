@@ -59,7 +59,6 @@ function EmployerSignUp() {
   const [agreeToTerms, setAgreeToTerms] = useState(false);
   const [categoryId, setCategoryId] = useState(null);
   const [QS, set_QS] = useState(queryString.parse(location.search));
-
   const roles = useAppSelector(selectRole);
   const findUsPlatforms = useAppSelector(selectFindUsPlatform);
   const signupSuccess = useAppSelector(selectEmployerSignup);
