@@ -222,7 +222,6 @@ const ShareUserProfile = ({
   }, [id]);
 
   React.useEffect(() => {
-    jobseekerProfileById && console.log(jobseekerProfileById);
     jobseekerProfileById instanceof Object &&
       setJobseekerProfileByIdIsLoading(false);
   }, [jobseekerProfileById]);
@@ -233,34 +232,6 @@ const ShareUserProfile = ({
 
   return (
     <div className="user-profile-wrapper">
-      {/* <div className="hide-perofile-header">
-{showProfile && !profileOption ? (
-	<img
-		className="back-icon"
-		onClick={handleProfile}
-		src={require("../../assets/images/icons/Back.svg")}
-		alt=""
-	/>
-) : showProfile && profileOption ? (
-	<img
-		className="back-icon"
-		onClick={HandleProfileOption}
-		src={require("../../assets/images/icons/Back.svg")}
-		alt=""
-	/>
-) : (
-	""
-)}
-{profileOption ? (
-	""
-) : (
-	<Button
-		onClick={HandleProfileOption}
-		className="profile-option outlined">
-		Profile Option
-	</Button>
-)}
-</div> */}
 
       {/* profile section */}
       <div className="profile-section">
@@ -313,11 +284,6 @@ const ShareUserProfile = ({
                   <span>
                     <Dropdown
                       overlay={
-                        // <AdditionalInfo
-                        //   profile={profile}
-                        //   findTitleById={findTitleById}
-                        //   jobseekerProfileById={jobseekerProfileById}
-                        // />
 
                         additionalInfo(
                           profile,
@@ -341,17 +307,6 @@ const ShareUserProfile = ({
                         <PlusOutlined />
                       </Button>
                     </Dropdown>
-
-                    {/* A P P L I E D ___ P  O P O V E R __ R E M O V E D____ */}
-                    {/* <Popover
-							placement="bottom"
-							overlayClassName="popover-location c-popover"
-							content={<span>Applied</span>}>
-							<img
-								className="icon-btn ml-2"
-								src={require("../../assets/images/icons/Previously_applied.svg")}
-							/>
-						</Popover> */}
 
                     {!jobseekerProfileById?.mobile ? (
                       <img

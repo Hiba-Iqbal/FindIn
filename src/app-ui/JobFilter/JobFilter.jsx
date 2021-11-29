@@ -74,16 +74,6 @@ const JobFilter = (props) => {
       props.onHide();
     }
   }, [filterApplySuccess]);
-
-  const options = [
-    { value: "Takashi" },
-    { value: "John" },
-    { value: "Frank" },
-    { value: "Traver" },
-    { value: "Mili" },
-    { value: "Jack" },
-  ];
-  const [value, setValue] = useState([]);
   const [form] = Form.useForm();
 
   const onFinish = (values) => {
@@ -94,12 +84,10 @@ const JobFilter = (props) => {
     if (selectedCountryId) {
       values.countryId = selectedCountryId;
     }
-    // delete values.salaryRange;
     let o = Object.fromEntries(
       Object.entries(values).filter(([_, v]) => v != null)
     );
     const payload = new URLSearchParams(o).toString();
-    // console.log("values", payload);
 
     dispatch(getFilteredJob(payload));
   };

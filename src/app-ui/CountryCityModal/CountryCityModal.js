@@ -17,13 +17,7 @@ const CountryCityModal = ({
   selectedCountryId,
 }) => {
   const dispatch = useAppDispatch();
-
   const [activeCountry, setActiveCountry] = useState(false);
-
-  const [checkedList, setCheckedList] = useState(null);
-  // const [indeterminate, setIndeterminate] = useState(true);
-  const [checkAll, setCheckAll] = useState(false);
-
   const countries = useAppSelector(selectCountries);
   const cities = useAppSelector(selectCitiesByCountry);
 
@@ -34,9 +28,7 @@ const CountryCityModal = ({
   }, [selectedCountryId]);
 
   const handleSelectedCities = (v) => {
-    console.log("cities: ", v);
     setSelectedCitiesIds(v);
-    // console.log(selectedCountryId);
   };
   const onSave = () => {
     setCountriesCitiesModal(false);
