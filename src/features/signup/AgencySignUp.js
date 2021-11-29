@@ -130,7 +130,6 @@ function AgencySignUp() {
     }
     delete payload.agreeTerms;
     payload.profilePhoto = profileImage?.url;
-    console.log(payload);
     dispatch(agencySignup(payload));
   };
 
@@ -174,12 +173,6 @@ function AgencySignUp() {
     dispatch(removePreUploadedProfileImage());
     setCurrentStep(2);
   };
-
-  // useEffect(() => {
-  //   setCategoryId(categoryId);
-  //   console.log("useeffect", categoryId);
-  // }, [categoryId]);
-
   const renderSteps = (currentStep) => {
     switch (currentStep) {
       case 1:

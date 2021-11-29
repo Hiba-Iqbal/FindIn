@@ -49,7 +49,6 @@ function Login() {
 
 
   const onFinish = (values) => {
-    console.log("values: ", values);
     if (values.remember) {
       setRememberMe(true);
     } else {

@@ -68,7 +68,6 @@ const additionalInfo = (
               )
             )}
           >
-            {/* {console.log("WIDTH",width)} */}
             <span>
               {!jobseekerProfileById?.jobseekerDesiredLocation?.length
                 ? "-"
@@ -275,23 +274,11 @@ const ShareUserProfile = ({
               />
               <div className="profile-video-section">
                 <img
-                  // onClick={() => {
-                  //   setIsPictureOpen(true)
-                  //   console.log("is picture open : ", isPictureOpen)
-                  // }}
                   className="profile-img"
                   src={jobseekerProfileById?.profilePhoto || defaultImage}
                   alt="profile-img"
                 />
               </div>
-              {/* Single picture view modal from Light box */}
-              {/* {isPictureOpen && (
-				<Lightbox
-					reactModalStyle={{ zIndex: "1060"}}
-					mainSrc={jobseekerProfileById?.profilePhoto || defaultImage}
-					onCloseRequest={() => setIsPictureOpen(false)}
-				/>
-			)} */}
               <div className="user-option">
                 <div className="details">
                   <span className="user-name">

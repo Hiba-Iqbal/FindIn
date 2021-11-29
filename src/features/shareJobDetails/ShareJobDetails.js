@@ -256,7 +256,6 @@ const ShareJobDetails = ({
             </span>
           </span>
 
-          {/* {console.log("DATA", data)} */}
 
           {/* B E N E F I T S */}
           {width < 900 && (

@@ -156,7 +156,6 @@ export const getFilteredJob = createAsyncThunk(
   "jobs/get-filtered-job",
   async (params) => {
     const newparams = String("&").concat(params);
-    // console.log(newparams);
     const response = await getFilteredJobAPI(newparams);
     return response.data;
   }
