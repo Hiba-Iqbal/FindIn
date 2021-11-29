@@ -1,7 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router";
 import Fade from "react-reveal/Fade";
-import { Row, Col } from "antd";
 import Button from "../../shared-ui/Button/Button";
 import BannerWithImages from "../../shared-ui/BannerWithImages/BannerWithImages";
 import "./_Home.scss";
@@ -16,7 +15,6 @@ function Home() {
           <div className="row banner-spacing">
             <div className="col-lg-6 col-xl-6 px-xl-5 px-lg-3 first-banner-heading-container">
               <span className="inner-container">
-                {/* <div> */}
                 <Fade bottom>
                   <h2 className="main-heading">
                     THE{" "}
@@ -215,7 +213,6 @@ c            <div className="container-fluid p-0 d-flex justify-content-center">
           </Fade>
         </div>
         <div className="pr-0 bottom-container">
-          {/* <Fade bottom duration={1000}> */}
           <div className="bottom-container-row">
             <div className="padding-mobile bottom-text-section text-column ">
               <img
