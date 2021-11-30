@@ -59,7 +59,7 @@ const SelectWithAddItem = ({
                   }}
                   onClick={addItem}
                 >
-                  <PlusOutlined className="mr-1" /> Add item
+                  <PlusOutlined className="mr-1" /> Add Item
                 </a>
               </span>
             </span>
