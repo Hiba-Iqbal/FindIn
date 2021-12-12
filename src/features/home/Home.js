@@ -144,7 +144,7 @@ function Home() {
                 interviews, calls, connections and more.
               </h5>
             </div>
-c            <div className="container-fluid p-0 d-flex justify-content-center">
+            <div className="container-fluid p-0 d-flex justify-content-center">
               <img
                 className="w-75 img-mobile h-50"
                 src={require("../../assets/images/home/8.png")}
